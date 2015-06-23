@@ -40,7 +40,7 @@
     "gulp-jshint": "*",
     "gulp-notify": "*",
     "gulp-plumber": "*",
-    "gulp-sass": "*",
+    "gulp-sass": "^2.0.1",
     "gulp-streamify": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",

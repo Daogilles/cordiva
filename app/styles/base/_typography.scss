@@ -165,57 +165,8 @@ p {
     font-weight: $semibold !important;
 }
 
-.title-big {
-    color: $pink-primary;
-    font-size: 75px;
-    font-family: "Raleway";
-    font-weight: $heavy;
-    line-height: 78px;
-    text-transform: uppercase;
-}
-
-.title-primary {
-    color: $blue;
+.home-title {
+    color: $purple;
     font-size: 40px;
-    font-family: "Raleway";
-    font-weight: $heavy;
-    line-height: 48px;
-    text-transform: uppercase;
+    font-weight: $light;
 }
-
-.text-form {
-    color:$blue;
-    font-size: 26px;
-    font-family: "Raleway";
-    font-weight: $normal;
-    line-height: 32px;
-}
-
-.title-second {
-    color: $pink-primary;
-    font-size: 24px;
-    font-family: "Raleway";
-    font-weight: $medium;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-
-.mentions {
-    p {
-        color: $white;
-        font-size: 12px;
-        font-weight: 400;
-        margin-top: 10px;
-    }
-}
-
-.pink-primary {
-    color: $pink-primary !important;
-}
-.blue {
-    color: $blue !important;
-}
-.gray-light {
-    color: $gray-light !important;
-}
-

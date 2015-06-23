@@ -2,5 +2,11 @@
 // Home page
 // --------------------------------------------------
 body {
-	background-color: yellow !important;
+	background:url('../images/bg.png') no-repeat;
+	background-attachment: fixed;
+}
+
+.headlight {	
+	height:500px;
+	width:100%;
 }

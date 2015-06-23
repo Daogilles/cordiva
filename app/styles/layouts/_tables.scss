@@ -20,7 +20,7 @@ table {
         font-size: $font-size-base;
         color: $black;
 
-        border: 1px solid $gray-lighter;
+        border: 1px solid $gray-light;
         vertical-align: middle;
         
         &.minor {
@@ -42,5 +42,5 @@ table {
 }
 
 .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
-    background-color: $gray-lighter;
+    background-color: $gray-light;
 }

@@ -58,16 +58,10 @@ form {
             &.textarea {
                 line-height: 20px;
             }
-            &.label-subtitle {
-                color: $pink-primary;
-                display: initial;
-                font-size: 28px;
-                font-weight: $light;
-            }
         }
 
         .tooltip {
-            background-color: $blue-sky;
+            background-color: $black;
             box-shadow: 2px 5px 25px 1px rgba(0, 0, 0, 0.2);
             position: absolute;
             bottom: 128%;
@@ -171,7 +165,7 @@ form {
 
         &:disabled {
             border-color: $gray;
-            background-color: $gray-lighter;
+            background-color: $gray-light;
             color: $gray-dark;
 
             @include placeholder {
@@ -188,7 +182,7 @@ form {
         height: 70px;
         line-height: 70px;
         border: none;
-        background-color: $gray-lighter;
+        background-color: $gray-light;
         width: 100%;
         margin: 0;
         
@@ -198,7 +192,7 @@ form {
         -webkit-appearance: none;
         border-radius: 0;
 
-        color: $pink-primary;
+        color: $gray;
         font-size: 28px;
         font-weight: $medium;
 
@@ -210,7 +204,7 @@ form {
         &:focus {
             outline: none;
             // box-shadow: 0 0 5px rgba(0,0,0,.2);
-            background-color: $gray-lightest;
+            background-color: $gray-light;
             @include placeholder {
                 color: $gray;
             }
@@ -218,7 +212,7 @@ form {
 
         &:disabled {
             border-color: $gray;
-            background-color: $gray-lighter;
+            background-color: $gray-light;
             color: $gray-dark;
 
             @include placeholder {

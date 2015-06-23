@@ -21,9 +21,9 @@ function App() {
         this.resize();
 
         // hide loader :
-        TweenMax.to("#loader", 0.3, { opacity: 0, onComplete: function(e){            
-            console.log('website load');
-        }});
+        // TweenMax.to("#loader", 0.3, { opacity: 0, onComplete: function(e){            
+        //     console.log('website load');
+        // }});
 
         // resize
         // -------------------------

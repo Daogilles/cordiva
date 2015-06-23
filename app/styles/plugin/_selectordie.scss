@@ -6,7 +6,7 @@
     border: none;
     // box-shadow: none;
     // width: 100%;
-    background-color: $gray-lighter;
+    background-color: $gray-light;
     height: 70px;
     
     padding: 0;
@@ -23,7 +23,7 @@
         width: 100%;
         font-weight: $medium;
         
-        color: $pink-primary;
+        color: $gray;
         position: relative;
         
         cursor: pointer;
@@ -65,7 +65,7 @@
         box-shadow: none;
         
         .sod_label {
-            border-color: $gray-lightest;
+            border-color: $gray-light;
         }
     }
     
@@ -114,7 +114,7 @@
         }
 
         .sod_list_wrapper {
-            border-color: $gray-lightest;
+            border-color: $gray-light;
             z-index: 9999;
         }
     } 
@@ -125,7 +125,7 @@
             margin-top: 0;
             margin-bottom: -1px;
             
-            border-top: 1px solid $gray-lightest;
+            border-top: 1px solid $gray-light;
             
             top: auto;
             bottom: 100%;
@@ -135,7 +135,7 @@
 
     .sod_list_wrapper {
         border: none;
-        background-color: $gray-lighter;
+        background-color: $gray-light;
         font-size: 28px;
         font-weight: $medium;
         width: 100%;
@@ -150,7 +150,7 @@
     }
 
     .sod_option {
-        border-bottom: 1px solid $gray-lighter;
+        border-bottom: 1px solid $gray-light;
         line-height: 60px;
         height: 60px;
         font-weight: $medium;
@@ -216,7 +216,7 @@
         }
 
         &.disabled {
-            color: $gray-lightest !important;
+            color: $gray-light !important;
             
             span:after {
                 display: none;

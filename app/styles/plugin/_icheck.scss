@@ -7,7 +7,7 @@
     
     display: inline-block;
     vertical-align: text-bottom;
-    background-color: $gray-lighter;
+    background-color: $gray-light;
     
     // &:before {
     //     content: '';
@@ -72,7 +72,7 @@
         top: 0px;
         width: 12px;
         height: 12px;
-        border: 1px solid $gray-lighter;
+        border: 1px solid $gray-light;
         background: $white;
         visibility: visible;
         display: inline-block;
@@ -88,7 +88,7 @@
         left: 3px;
         width: 8px;
         height: 8px;
-        background-color: $gray-lighter;
+        background-color: $gray-light;
         visibility: visible;
         @include transition(all 200ms ease);
         display: inline-block;

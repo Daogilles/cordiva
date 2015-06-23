@@ -3,5 +3,63 @@
 // --------------------------------------------------
 
 header {
-	
+	height: 90px;
+	position: absolute;
+	top:0;
+	z-index: 9999;
+	.header-bg {
+		background-color: $white;
+		height: 100%;
+		left: 0;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	.header-content {
+		height: 100%;
+		position: relative;
+		z-index: 9;
+	}
+	.logo-wrapper {
+		float: left;
+		height: 100%;
+		line-height:90px;
+		width: 21.5%;
+		.logo-center {
+			display: block;
+			margin: 0 auto;
+			width: 225px;
+		}		
+	}
+	.nav-main {
+		float: left;
+		height: 90px;
+		width: 78%;
+	}
+}
+
+.main-menu {
+	height: 90px;
+	text-align: right;
+	ul {
+		height: 90px;
+		padding:0;
+		overflow: hidden;
+		margin: 0;
+	}
+	li {
+		border-left: 1px solid $gray-light;
+		display: inline-block;
+		line-height: 90px;
+		list-style: none;
+		padding: 0 20px;
+		margin: 0;
+		
+		a {
+			color: $gray;
+			font-size: 16px;
+		}
+	}
 }
