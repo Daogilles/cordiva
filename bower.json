@@ -1,0 +1,8 @@
+{
+  "name": "Big-Starter",
+  "private": true,
+  "dependencies": {
+    "gsap": "~1.14.2",
+    "jquery": "~2.1.3"
+  }
+}

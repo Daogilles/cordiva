@@ -1,0 +1,60 @@
+{
+  "name": "fourmii",
+  "version": "0.0.0",
+  "description": "website fourmii - primonial",
+  "author": "Florent BIFFI, Alexandre TOUDIC",
+  "gulp": {
+    "proxy": "cordiva.dev",
+    "app": "./app",
+    "tmp": "./web/wp-content/themes/cordiva",
+    "dist": "./web/wp-content/themes/cordiva"
+  },
+  "browserify": {},
+  "browserify-shim": {
+    "waypoints": "waypoints",
+    "fancybox": "fancybox",
+    "selectordie": "selectordie",
+    "icheck": "icheck",
+    "jquery": {
+      "exports": "$"
+    }
+  },
+  "browser": {
+    "waypoints": "./bower_components/waypoints/lib/jquery.waypoints.js",
+    "fancybox": "./bower_components/fancybox/source/jquery.fancybox.js",
+    "selectordie": "./bower_components/selectordie/_src/selectordie.js",
+    "icheck": "./bower_components/icheck/icheck.min.js",
+    "jquery": "./bower_components/jquery/dist/jquery.js"
+  },
+  "dependencies": {
+    "gsap": "^1.15.1",
+    "jquery": "^2.1.3"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "browserify": "*",
+    "browserify-shim": "*",
+    "connect-modrewrite": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-jshint": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "gulp-streamify": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "gulp.spritesmith": "^2.5.0",
+    "html-browserify": "*",
+    "jshint-stylish": "*",
+    "node-bourbon": "*",
+    "pretty-hrtime": "*",
+    "require-dir": "*",
+    "run-sequence": "*",
+    "stringify": "*",
+    "vinyl-source-stream": "*",
+    "watchify": "*"
+  },
+  "private": true
+}

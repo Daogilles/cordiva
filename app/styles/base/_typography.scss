@@ -1,0 +1,221 @@
+//
+// Typography
+// --------------------------------------------------
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, img, form, input, button, address, .alert, .table, .btn {
+    margin: 0;
+    margin-top: 20px;
+    
+    &:first-child, &.no-gap {
+        margin-top: 0;
+    }
+}
+
+h1, h2, h3, h4, p, a {
+    -ms-word-wrap: break-word;
+        word-wrap: break-word;
+}
+
+// Body text
+// -------------------------
+
+p {
+    font-family: $font-sans-serif;
+    line-height: 1.6;
+    font-size: $font-size-base;
+    
+    strong {
+        font-weight: $bold;
+    }
+
+    small {
+        font-size: $font-size-small;
+    }
+    
+    b {
+        font-weight: $bold;
+    }
+    
+    i, em {
+        font-style: italic;
+    }
+}
+
+// Headings
+// -------------------------
+
+h1, .h1 {
+    font-family: $font-heading;
+    font-size: $font-size-h1;
+    line-height: 1.2;
+    font-weight: $extra-bold;    
+}
+
+h2, .h2 {
+    font-family: $font-sans-serif;
+    font-size: $font-size-h2;
+    line-height: 1.2;
+    font-weight: $bold;
+}
+
+
+h3, .h3 {
+    font-family: $font-sans-serif;
+    font-size: $font-size-h3;
+    line-height: 1.2;
+    font-weight: $bold;
+}
+
+h4, .h4 {
+    font-family: $font-sans-serif;
+    font-size: $font-size-h4;
+    color: $black;
+    line-height: 1.2;
+    font-weight: $normal;
+}
+
+h5, .h5 {
+    font-family: $font-sans-serif;
+    font-size: $font-size-h5;
+    color: $black;
+    line-height: 1.2;
+    font-weight: $normal;
+}
+
+h6, .h6 {
+    font-family: $font-sans-serif;
+    font-size: $font-size-h6;
+    color: $black;
+    line-height: 1.2;
+    font-weight: $normal;
+}
+
+// List
+// -------------------------
+
+ul, ol {
+    padding-left: 15px;
+
+    li {
+        line-height: 1.6;
+        color: $black;
+    }
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+
+    & > li {
+        display: inline-block;
+        padding: 0 5px;
+        
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+.list-unstyled {
+    padding: 0;
+    list-style-type: none;
+}
+
+// Font style
+// -------------------------
+
+.underline {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+// Others styles
+// -------------------------
+
+address {
+    font-style: $normal;
+}
+
+// Titles
+// -------------------------
+
+p {
+    color: $gray;
+    font-size: 16px;
+    font-family: "Raleway";
+    font-weight: $medium;
+    line-height: 24px;
+}
+
+.bold {
+    font-weight: $bold;
+}
+.semibold {
+    font-weight: $semibold !important;
+}
+
+.title-big {
+    color: $pink-primary;
+    font-size: 75px;
+    font-family: "Raleway";
+    font-weight: $heavy;
+    line-height: 78px;
+    text-transform: uppercase;
+}
+
+.title-primary {
+    color: $blue;
+    font-size: 40px;
+    font-family: "Raleway";
+    font-weight: $heavy;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.text-form {
+    color:$blue;
+    font-size: 26px;
+    font-family: "Raleway";
+    font-weight: $normal;
+    line-height: 32px;
+}
+
+.title-second {
+    color: $pink-primary;
+    font-size: 24px;
+    font-family: "Raleway";
+    font-weight: $medium;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.mentions {
+    p {
+        color: $white;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+}
+
+.pink-primary {
+    color: $pink-primary !important;
+}
+.blue {
+    color: $blue !important;
+}
+.gray-light {
+    color: $gray-light !important;
+}
+
