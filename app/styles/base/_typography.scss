@@ -4,7 +4,7 @@
 
 p, h1, h2, h3, h4, h5, h6, ul, ol, img, form, input, button, address, .alert, .table, .btn {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     
     &:first-child, &.no-gap {
         margin-top: 0;
@@ -151,11 +151,7 @@ address {
 // -------------------------
 
 p {
-    color: $gray;
-    font-size: 16px;
-    font-family: "Raleway";
-    font-weight: $medium;
-    line-height: 24px;
+    line-height: 140%;
 }
 
 .bold {
@@ -165,8 +161,9 @@ p {
     font-weight: $semibold !important;
 }
 
-.home-title {
+h1.home-title {
     color: $purple;
     font-size: 40px;
     font-weight: $light;
+    margin: 30px 0;
 }

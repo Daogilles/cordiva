@@ -1,0 +1,42 @@
+//
+// Lastest News
+// --------------------------------------------------
+
+.latest-news {
+    text-align: center;
+}
+
+.news-item {
+    height: 270px;
+    margin-bottom: 60px;
+    &:nth-child(2), &:nth-child(5){
+        border-left: 1px solid $gray-light;
+        border-right: 1px solid $gray-light;
+    }
+    .news-inner {
+        padding: 0 40px;
+        .news-image {
+            background-color: $white;
+            border:1px solid $gray-light;
+            height: 150px;
+            line-height: 150px;
+            width: 100%;
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        p {
+            color: $gray-dark;
+            font-size: 16px;
+            font-weight: $normal;
+            line-height: 120%;
+            margin-bottom: 15px;
+        }
+        a {
+            color: $purple;
+            font-size: 12px;
+            font-weight: $normal;
+        }
+    }
+}

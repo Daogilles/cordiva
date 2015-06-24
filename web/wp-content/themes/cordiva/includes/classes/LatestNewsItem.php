@@ -35,14 +35,15 @@ class LatestNewsItem {
             while ($query->have_posts()) {
                 $query->the_post();
                 $tab_result[$cpt]["author"] = get_the_author();
+                $tab_result[$cpt]["link"] = get_permalink();                
                 $tab_result[$cpt]["title"] = $query->post->post_title;
                 $tab_result[$cpt]["content"] = $query->post->post_content;
                 $tab_result[$cpt]["sub_title"] = wp_trim_words( $query->post->post_content, 10, '...' );
                 $originalDate = $query->post->post_date;
                 $newDate = date("d M Y", strtotime($originalDate));
                 $tab_result[$cpt]["date"] = $newDate;
-                // $image = wp_get_attachment_image_src( get_post_thumbnail_id( $query->post->ID ), 'full' );
-                // $tab_result[$cpt]["image"] = wpthumb($image[0],'width=90&height=90&crop=1');
+                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $query->post->ID ), 'full' );
+                $tab_result[$cpt]["image"] = wpthumb($image[0],'width=300&height=150&crop=1');
                 $cpt++;
             }
         }

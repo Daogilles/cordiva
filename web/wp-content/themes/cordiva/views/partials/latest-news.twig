@@ -1,5 +1,20 @@
-<div class="latest-news">    
-    {% for news in latest_news %}
-        {{dump(news)}}
-    {% endfor %}
+<div class="latest-news">
+	<div class="container">
+		<h1 class="home-title">Dernières actualités</h1>
+		<div class="news-wrapper">
+			<div class="row">
+				{% for news in latest_news %}
+			        <div class="col-4 news-item">
+			        	<div class="news-inner">
+			        		<div class="news-image">
+			        			<img src="{{ news.image }}" alt="" class="valign">	
+			        		</div>			        		
+			        		<p>{{news.title}}</p>
+			        		<a href="{{news.link}}">En savoir +</a>
+			        	</div>		        	
+			        </div>		        
+			    {% endfor %}
+			</div>
+		</div>
+	</div>
 </div>
