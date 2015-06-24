@@ -1,0 +1,9 @@
+<ul class="footer-menu">
+{% for item in footer_menu.items %}            
+    <li class="">
+        <a href="{{item.link}}" class="inner" title="{{item.title}}" id="{{ item.id }}">
+            <span class="footer-menu-item">{{item.title}}</span>                    
+        </a>
+    </li>
+{% endfor %}
+</ul>

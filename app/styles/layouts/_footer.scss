@@ -3,19 +3,124 @@
 // --------------------------------------------------
 
 footer {
-   
+   height: 700px;
 }
 
-#overlay {
-	cursor: pointer;
-	display: none;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
+#footer-top {
+	background: url('../images/bg-footer.jpg') center center no-repeat;
+	background-size: cover;
+	height: 520px;
 	width: 100%;
-	z-index: 80;
-	&.show{
-		display: block;
+	
+	#footer-top-wrapper {
+		position: relative;
+		top: 175px;
+		.col-4 {
+			height: 245px;
+			position: relative;
+		}
+	}
+
+	
+	.contact-particulier {
+		a {
+			background: url('../images/bg-contact.jpg') center center no-repeat;
+		}
+	}
+	.contact-pro {
+		a {
+			background: url('../images/bg-contact2.jpg') center center no-repeat;
+		}
+	}
+	h2 {
+		color: $white;
+		font-size: 28px;
+		font-weight: $light;
+	}
+	a {
+		bottom: 0;
+		height: 204px;
+		left: 0;
+		padding-right: 20px;
+		position: absolute;
+		width: calc(100% - 20px);
+		span {
+			color: $purple;
+			display: block;
+			font-size: 24px;
+			font-weight: $normal;
+			line-height: 24px;
+			position: relative;
+			padding: 27px 33px;
+		}
+	}
+
+	.footer-newsletter {
+		background-color: $purple;
+		bottom: 0;
+		height: 95px;
+		position: absolute;
+		width: 100%;
+		.footer-newsletter-wrapper {
+			padding: 15px;
+		}
+		span {
+			color: $white;
+			font-size: 14px;
+
+		}
+		form {
+			margin-top: 10px;
+			input {
+				float: left;
+				width: 60%;
+			}
+			input[type=submit] {
+				background-color: #889094;
+				height: 30px;
+				line-height: 30px;
+				margin: 0;
+				width: 10%;
+			}
+		}
+	}
+
+}
+
+#footer-bottom {
+	background: $gray-lighter;
+	height: 175px;
+	font-size: 12px;
+	font-weight: $normal;
+	width: 100%;
+	.row {
+		&:first-child {
+			padding-top: 25px;			
+		}
+		.col-6 {
+			&:first-child {
+				span {
+					color: $gray;
+				}
+			}
+		}
+		&:last-child {
+			margin-top: 40px;
+			position: relative;
+			a {
+				background: url('../images/powered.png') center center no-repeat;
+				height: 78px;
+				text-indent: -9999px;
+				width: 74px;
+			}
+			span {				
+				bottom: 0;
+				color: $gray;
+				font-size: 11px;
+				font-family: Arial;
+				margin-left: 10px;
+				position: absolute;
+			}
+		}
 	}
 }

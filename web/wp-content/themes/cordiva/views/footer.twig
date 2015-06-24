@@ -1,3 +1,53 @@
 <footer>
-	
+	<div id="footer-top">
+		<div class="wrapper">
+			<div id="footer-top-wrapper">
+				<div class="row">
+					<div class="col-4 contact-particulier">
+						<h2>Contact</h2>
+						<a href="">
+							<span>Vous êtes un<br/>particulier ?</span>
+						</a>
+					</div>
+					<div class="col-4 contact-pro">
+						<a href="">
+							<span>Vous êtes<br/>professionnel de<br/>santé ?</span>
+						</a>
+					</div>
+					<div class="col-4">
+						<h2>Newsletter</h2>
+						<div class="footer-newsletter">
+							<div class="footer-newsletter-wrapper">
+								<span>Votre adresse e-mail</span>
+								<form action="">
+									<input type="text" name="newsletter">
+									<input type="submit" value="OK">
+								</form>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer-bottom">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-6">
+					<span>Ce site est uniquement à destination des professionnels de santé</span>
+				</div>
+				<div class="col-6">
+					{% include 'partials/footer-menu.twig' %}		
+				</div>
+			</div>
+			<div class="row">
+				<a href="">Powered by Alere.com</a>
+				<span>© 2015 Alere. All rights reserved. Alere is a trademark of the Alere group of companies.</span>
+			</div>
+		</div>
+	</div>
 </footer>
+
+
+
+                      

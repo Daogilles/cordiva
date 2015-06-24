@@ -2,8 +2,16 @@
 // Home page
 // --------------------------------------------------
 body {
-	background:url('../images/bg.png') no-repeat;
+	background:url('../images/bg.png') center center no-repeat;
 	background-attachment: fixed;
+}
+
+.home {
+	.main-content {
+		position: relative;
+		top: -90px;
+		z-index: 1;
+	}
 }
 
 .headlight {	

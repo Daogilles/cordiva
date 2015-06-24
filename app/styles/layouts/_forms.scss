@@ -179,14 +179,13 @@ form {
     }
 
     input[type="text"], input[type="email"], input[type="password"] {
-        height: 70px;
-        line-height: 70px;
+        height: 30px;
+        line-height: 30px;
         border: none;
-        background-color: $gray-light;
-        width: 100%;
+        background-color: $white;
         margin: 0;
         
-        padding: 0 25px;
+        padding: 0 10px;
         display: block;
         
         -webkit-appearance: none;
@@ -304,6 +303,8 @@ form {
 
 
 input[type="submit"], select {
+    border: none;
+    color: $white;
     &:focus {
         outline: none;
     }

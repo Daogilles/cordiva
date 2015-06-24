@@ -1,0 +1,41 @@
+//
+// Alert
+// --------------------------------------------------
+
+.main-menu {
+    height: 90px;
+    text-align: right;
+    ul {
+        height: 90px;
+        padding:0;
+        overflow: hidden;
+        margin: 0;
+    }
+    li {
+        border-left: 1px solid $gray-light;
+        display: inline-block;
+        line-height: 90px;
+        list-style: none;
+        padding: 0 20px;
+        margin: 0;
+        
+        a {
+            color: $gray;
+            font-size: 16px;
+        }
+    }
+}
+
+.footer-menu {
+    text-align: right;
+    li {
+        display: inline-block;
+        list-style:none;
+        padding: 0 10px;
+        a {
+            color: $purple;
+            font-size: 12px;
+            font-weight: $normal;
+        }
+    }
+}
