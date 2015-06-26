@@ -18,4 +18,10 @@ body {
 .headlight {	
 	height:500px;
 	width:100%;
+	.headlight-slider {
+		background:url('../images/bg-slider.jpg') center center no-repeat;
+		background-size:cover;
+		height: 100%;
+		width: 100%;
+	}
 }

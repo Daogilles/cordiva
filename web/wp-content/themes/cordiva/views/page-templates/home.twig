@@ -1,9 +1,18 @@
 {% extends "base.twig" %}
 {% block content %}
     <div class="headlight">
-        <img src="{{img_dir}}/bg-slider.jpg" alt="">
+    	<div class="headlight-slider">
+    		
+    	</div>
+        <!-- <img src="{{img_dir}}/bg-slider.jpg" alt=""> -->
     </div>
 
 	{% include 'partials/latest-news.twig' %}
+
+	{% include 'partials/link-infos.twig' %}
+
+	{% include 'partials/meet-expert.twig' %}
+
+	{% include 'partials/link-more.twig' %}
 	
 {% endblock %}

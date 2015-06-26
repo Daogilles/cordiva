@@ -20,10 +20,11 @@ function App() {
     App.prototype.initialize = function(){
 
         this.resize();
+        this.events();
 
         // hide loader :
         // TweenMax.to("#loader", 0.3, { opacity: 0, onComplete: function(e){            
-        //     console.log('website load');
+        //     console.log('website load');            
         // }});
 
         // resize
@@ -32,6 +33,35 @@ function App() {
             _this.resize();
         });
 
+    };
+
+    //
+    // Events
+    // -------------------------
+    App.prototype.events = function() {
+        //
+        // Events Bloc Link Infos
+        // -------------------------
+        $(document).on('mouseover', '.link-infos-bloc', function(e){
+            $('.link-infos-bloc').addClass('mini');
+            $(this).removeClass('mini').addClass('expand');
+        });
+
+        $(document).on('mouseout', '.link-infos-bloc', function(e){
+            $('.link-infos-bloc').removeClass('mini');
+            $(this).removeClass('expand');
+        });
+
+        //
+        // Events Bloc Link More
+        // -------------------------
+        $(document).on('mouseover', '.link-more-bloc', function(e){
+            $(this).addClass('hover');
+        });
+
+        $(document).on('mouseout', '.link-more-bloc', function(e){
+            $(this).removeClass('hover');
+        });
     };
 
     //
