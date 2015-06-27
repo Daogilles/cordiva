@@ -97,6 +97,7 @@ class Bootstrap_Public {
 		 */
 
 		wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/bundle.js', array(), $this->version, false );
+		wp_enqueue_script( 'slick', get_template_directory_uri() . '/scripts/slick/slick.js', array(), $this->version, false );
 
 	}
 

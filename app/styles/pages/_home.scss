@@ -10,18 +10,7 @@ body {
 .home {
 	.main-content {
 		position: relative;
-		top: -90px;
+		top: 0;
 		z-index: 1;
-	}
-}
-
-.headlight {	
-	height:500px;
-	width:100%;
-	.headlight-slider {
-		background:url('../images/bg-slider.jpg') center center no-repeat;
-		background-size:cover;
-		height: 100%;
-		width: 100%;
 	}
 }

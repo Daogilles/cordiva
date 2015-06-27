@@ -12,18 +12,10 @@
 		<header class="header" >
 			<div class="header-bg"></div>
 			<div class="header-content">
-				{% block header %}
-					<div class="wrapper">
-						<div class="logo-wrapper">
-							<div class="logo-center">
-								<a class="logo-link valign" href="/" rel="home">
-									<img src="{{img_dir}}/logo.png" alt="">
-								</a>
-							</div>							
-						</div>
-											
-						{% include 'partials/main-menu.twig' %}						
-					</div>
+				{% block header %}									
+										
+					{% include 'partials/main-menu.twig' %}						
+					
 				{% endblock %}
 			</div>			
 		</header>

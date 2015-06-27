@@ -26,6 +26,7 @@ class BootstrapSite extends TimberSite {
         $context['content_url'] = content_url();
         $context['plugins_url'] = plugins_url();
         $context['admin_url'] = admin_url();
+        $context['home_url'] = get_home_url();
         $context['img_dir'] = get_template_directory_uri().'/images';
         $context['is_home'] = is_front_page();        
         $context['is_single'] = is_single();

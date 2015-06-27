@@ -30,21 +30,6 @@
             display: block;
             font-size: 18px;
             font-weight: $light;
-        }
-        .btn-purple {
-            color: $white;
-            font-size: 18px;
-            font-weight: $normal;
-            background-color:$purple;
-            border-radius: 10px;
-            height: 50px;
-            line-height: 50px;
-            margin-top:30px;
-            text-align: center;
-            width: 100%;
-            &:hover {
-                background-color:$purple-dark;
-            }
-        }
+        }        
     }
 }
