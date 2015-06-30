@@ -1,21 +1,16 @@
 <div class="link-infos">
 	<div class="container">
-		<h1 class="home-title">Le dispositif Cordiva</h1>	
+		<h1 class="home-title">{{ home.titre_dispositif }}</h1>	
 	</div>
+
 	<div class="link-infos-content">
 		<div class="container">
-			<a href="#" class="link-infos-bloc">
-				<span class="link-infos-hover"></span>
-				<span class="valign">Comment ça marche ?</span>
-			</a>
-			<a href="#" class="link-infos-bloc">
-				<span class="link-infos-hover"></span>
-				<span class="valign">Nos résultats</span>
-			</a>
-			<a href="#" class="link-infos-bloc">
-				<span class="link-infos-hover"></span>
-				<span class="valign">Découvrir<br/>les études cliniques</span>
-			</a>
+			{% for dispositif in home.dispositif %}
+				<a href="{{ dispositif.lien }}" class="link-infos-bloc">
+					<span class="link-infos-hover"></span>
+					<span class="valign">{{ dispositif.texte }}</span>
+				</a>
+			{% endfor %}
 		</div>
 	</div>
 	

@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+{% block content %}
+    
+    <div class="content-headlight" style="background:url({{ resultat.image }}) center center no-repeat;background-size:cover;">
+    	<div class="container">
+    		<div class="valign">
+    			<h1>{{ resultat.titre }}</h1>
+    			<p>{{ resultat.sous_titres }}</p>
+    		</div>    		
+    	</div>    	
+    </div>
+	
+	<div class="page-content">
+		<div class="container">
+			<div class="content">
+				<div class="row">
+					<div class="col-7 text-content">
+						{{ resultat.content }}
+					</div>
+					<div class="col-5">
+						{% for img in resultat.images %}
+							<img src="{{ img }}" alt="">
+						{% endfor %}
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+
+{% endblock %}

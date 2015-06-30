@@ -1,21 +1,16 @@
 <div class="link-more">
 	<div class="container">
-		<h1 class="home-title">En savoir plus</h1>	
+		<h1 class="home-title">{{ home.titre_more }}</h1>	
 	</div>
 	<div class="link-more-content">
 		<div class="container">
-			<a href="#" class="link-more-bloc">
-				<span class="link-more-hover"></span>
-				<span class="valign">Cordiva pour les<br/>professionnels de santé</span>
-			</a>
-			<a href="#" class="link-more-bloc">
-				<span class="link-more-hover"></span>
-				<span class="valign">Qu’est-ce-que<br/>l’insuffisance cardiaque?</span>
-			</a>
-			<a href="#" class="link-more-bloc">
-				<span class="link-more-hover"></span>
-				<span class="valign">La presse en parle</span>
-			</a>
+			{% for link_more in home.en_savoir_plus %}
+				<a href="{{ link_more.lien_more }}" class="link-more-bloc">
+					<span class="link-more-hover"></span>
+					<span class="valign">{{ link_more.texte_more }}</span>
+				</a>
+			{% endfor %}
+			
 		</div>
 	</div>
 	

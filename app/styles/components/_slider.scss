@@ -7,11 +7,15 @@
     .headlight-slider {
         height: 100%;
         width: 100;
+        button {
+            background-color:transparent;
+            border:none;
+        }
     }
 }
 .headlight-slide {
-    background:url('../images/bg-slider.jpg') center center no-repeat;
-    background-size:cover;
+    // background:url('../images/bg-slider.jpg') center center no-repeat;
+    // background-size:cover;
     height: 100%;
     width: 100%;
     .container {
@@ -28,14 +32,78 @@
             font-size: 36px;
             font-weight: $light;
             line-height: 120%;
+            width: 365px;
         }
         .btn-purple {
             width: 185px;
         }
+    }    
+}
+
+.slick-dots {
+    bottom: 35px;
+    left: 50%;
+    margin-left:-25px;
+    padding:0;
+    position: absolute;
+    width: 65px;
+    li {
+        background-color:$white;
+        border-radius:100%;
+        cursor:pointer;
+        height: 15px;
+        float: left;
+        list-style: none;
+        position: relative;        
+        width: 15px;
+        &:nth-child(2) {
+            margin: 0 10px;
+        }
+        &:hover {
+            background-color:$purple;
+        }
+        &.slick-active {
+            background-color:$purple;
+        }
+        a {
+            height: 100%;
+            width: 100%;
+        }
+        button {
+            height: 15px;
+            left: 0;
+            margin:0;
+            padding:0;
+            position: absolute;
+            top: 0;
+            width: 15px;
+            text-indent: -9999px;
+        }
     }
 }
 
+.slick-next, .slick-prev {
+    height: 60px;
+    margin-top: -30px;
+    padding:0;
+    position: absolute;
+    top: 50%;
+    text-indent: -9999px;
+    width: 31px;
+    
+}
 
+.slick-next {
+    background:url('../images/arrow-next.png') center center no-repeat;
+    right: 0;
+    @include transform(translateX(50px));
+}
+
+.slick-prev {
+    background:url('../images/arrow-next.png') center center no-repeat;
+    left: 0;
+    @include transform(rotate(-180deg) translateX(50px));
+}
 
 // .slider-container {
 //     height: 100%;

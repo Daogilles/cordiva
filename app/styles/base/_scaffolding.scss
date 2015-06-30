@@ -53,6 +53,20 @@ body {
 .container {
     margin: 0 auto;
     width: 1024px;
+
+    .content {        
+        p {
+            color: $gray;
+            font-size: 14px;
+            font-weight: $normal;
+            text-align:justify;
+        }
+    }
+}
+
+.page-content {
+    background-color:$white;
+    padding: 100px 0;
 }
 
 // Links
@@ -127,4 +141,26 @@ hr {
 }
 .gap-80 {
     margin-top: 80px !important;
+}
+
+
+.content-headlight {
+    display:inline-block;
+    height:500px;
+    line-height:500px;
+    position: relative;
+    width:100%;
+    h1 {
+        color: $purple;
+        font-size: 40px;
+        font-weight: $light;
+        width: 500px;
+    }
+    p {
+        color: $gray;
+        font-size: 18px;
+        font-weight: $light;
+        text-align: justify;
+        width: 500px;
+    }
 }

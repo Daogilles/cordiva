@@ -302,7 +302,7 @@ form {
 }
 
 
-input[type="submit"], select {
+input[type="submit"], select, button {
     border: none;
     color: $white;
     &:focus {

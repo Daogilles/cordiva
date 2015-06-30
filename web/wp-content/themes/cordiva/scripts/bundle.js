@@ -45,14 +45,14 @@ function App() {
         // -------------------------
         setTimeout(function(){
             $('.first-menu-li').hover( function(e){
-                TweenMax.to('header', 0.3, {
+                TweenMax.to('header', 0.4, {
                     height: 180,
                     onStart: function(){
                         $(this.target[0]).addClass('open active');
                     },
                     overwrite: true
                 });
-                TweenMax.to($(this).find('.submenu'), 0.3, {
+                TweenMax.to($(this).find('.submenu'), 0.6, {
                     opacity: 1,
                     visibility: 'visible'
                 });
@@ -64,13 +64,16 @@ function App() {
                     },
                     overwrite: true
                 });
-                TweenMax.to($(this).find('.submenu'), 0, {
+                TweenMax.to($(this).find('.submenu'), 0.4, {
                     opacity: 0,
                     visibility: 'hidden'
                 });
             });
 
-            $('.headlight-slider').slick();
+            $('.headlight-slider').slick({
+                dots:true,
+                arrows:true
+            });
         },10);
         
 

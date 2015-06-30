@@ -454,6 +454,15 @@ body {
 .container {
   margin: 0 auto;
   width: 1024px; }
+  .container .content p {
+    color: #5c696f;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify; }
+
+.page-content {
+  background-color: #FFF;
+  padding: 100px 0; }
 
 a {
   text-decoration: none;
@@ -498,6 +507,24 @@ hr {
 
 .gap-80 {
   margin-top: 80px !important; }
+
+.content-headlight {
+  display: inline-block;
+  height: 500px;
+  line-height: 500px;
+  position: relative;
+  width: 100%; }
+  .content-headlight h1 {
+    color: #890c58;
+    font-size: 40px;
+    font-weight: 300;
+    width: 500px; }
+  .content-headlight p {
+    color: #5c696f;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    width: 500px; }
 
 p, h1, h2, h3, h4, h5, h6, ul, ol, img, form, input, button, address, .alert, .table, .btn {
   margin: 0;
@@ -1162,10 +1189,10 @@ form .error label {
 form .error input, form .error .sod_label {
   border: 2px solid #5fafbd; }
 
-input[type="submit"], select {
+input[type="submit"], select, button {
   border: none;
   color: #FFF; }
-  input[type="submit"]:focus, select:focus {
+  input[type="submit"]:focus, select:focus, button:focus {
     outline: none; }
 
 table {
@@ -1808,10 +1835,11 @@ span.icon {
   .headlight .headlight-slider {
     height: 100%;
     width: 100; }
+    .headlight .headlight-slider button {
+      background-color: transparent;
+      border: none; }
 
 .headlight-slide {
-  background: url("../images/bg-slider.jpg") center center no-repeat;
-  background-size: cover;
   height: 100%;
   width: 100%; }
   .headlight-slide .container {
@@ -1826,9 +1854,72 @@ span.icon {
       color: #890c58;
       font-size: 36px;
       font-weight: 300;
-      line-height: 120%; }
+      line-height: 120%;
+      width: 365px; }
     .headlight-slide .headlight-slide-content .btn-purple {
       width: 185px; }
+
+.slick-dots {
+  bottom: 35px;
+  left: 50%;
+  margin-left: -25px;
+  padding: 0;
+  position: absolute;
+  width: 65px; }
+  .slick-dots li {
+    background-color: #FFF;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 15px;
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 15px; }
+    .slick-dots li:nth-child(2) {
+      margin: 0 10px; }
+    .slick-dots li:hover {
+      background-color: #890c58; }
+    .slick-dots li.slick-active {
+      background-color: #890c58; }
+    .slick-dots li a {
+      height: 100%;
+      width: 100%; }
+    .slick-dots li button {
+      height: 15px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      width: 15px;
+      text-indent: -9999px; }
+
+.slick-next, .slick-prev {
+  height: 60px;
+  margin-top: -30px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  text-indent: -9999px;
+  width: 31px; }
+
+.slick-next {
+  background: url("../images/arrow-next.png") center center no-repeat;
+  right: 0;
+  -webkit-transform: translateX(50px);
+  -moz-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -o-transform: translateX(50px);
+  transform: translateX(50px); }
+
+.slick-prev {
+  background: url("../images/arrow-next.png") center center no-repeat;
+  left: 0;
+  -webkit-transform: rotate(-180deg) translateX(50px);
+  -moz-transform: rotate(-180deg) translateX(50px);
+  -ms-transform: rotate(-180deg) translateX(50px);
+  -o-transform: rotate(-180deg) translateX(50px);
+  transform: rotate(-180deg) translateX(50px); }
 
 #orientation, #browsehappy {
   position: fixed;
@@ -2299,3 +2390,12 @@ body {
   position: relative;
   top: 0;
   z-index: 1; }
+
+.content .col-7 {
+  padding-right: 30px; }
+
+.content .col-5 {
+  padding-left: 30px; }
+  .content .col-5 img {
+    max-width: 100%;
+    width: 100%; }

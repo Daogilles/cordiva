@@ -1,9 +1,8 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: edsongalinafortes
- * Date: 08/04/2015
- * Time: 14:03
+ * User: gillesdaoduc
+ * Date: 30/06/2015
  */
 
 class LatestNewsItem {

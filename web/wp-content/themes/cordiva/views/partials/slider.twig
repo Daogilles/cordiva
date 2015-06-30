@@ -1,0 +1,14 @@
+<div class="headlight">
+    <div class="headlight-slider container">
+        {% for slide in slide_item %}
+        <div class="headlight-slide" style="background:url({{slide.image}}) center center no-repeat;background-size:cover;">
+            <div class="container">
+                <div class="headlight-slide-content">
+                    <p>{{ slide.title }}</p>
+                    <a href="#" class="btn-purple">En savoir plus</a>
+                </div>                
+            </div>          
+        </div>
+        {% endfor %}
+    </div>
+</div>
