@@ -96,13 +96,13 @@
 .slick-next {
     background:url('../images/arrow-next.png') center center no-repeat;
     right: 0;
-    @include transform(translateX(50px));
+    @include transform(translateX(-30px));
 }
 
 .slick-prev {
     background:url('../images/arrow-next.png') center center no-repeat;
     left: 0;
-    @include transform(rotate(-180deg) translateX(50px));
+    @include transform(rotate(-180deg) translateX(-30px));
 }
 
 // .slider-container {

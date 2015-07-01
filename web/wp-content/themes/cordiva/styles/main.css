@@ -1906,20 +1906,20 @@ span.icon {
 .slick-next {
   background: url("../images/arrow-next.png") center center no-repeat;
   right: 0;
-  -webkit-transform: translateX(50px);
-  -moz-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  -o-transform: translateX(50px);
-  transform: translateX(50px); }
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  transform: translateX(-30px); }
 
 .slick-prev {
   background: url("../images/arrow-next.png") center center no-repeat;
   left: 0;
-  -webkit-transform: rotate(-180deg) translateX(50px);
-  -moz-transform: rotate(-180deg) translateX(50px);
-  -ms-transform: rotate(-180deg) translateX(50px);
-  -o-transform: rotate(-180deg) translateX(50px);
-  transform: rotate(-180deg) translateX(50px); }
+  -webkit-transform: rotate(-180deg) translateX(-30px);
+  -moz-transform: rotate(-180deg) translateX(-30px);
+  -ms-transform: rotate(-180deg) translateX(-30px);
+  -o-transform: rotate(-180deg) translateX(-30px);
+  transform: rotate(-180deg) translateX(-30px); }
 
 #orientation, #browsehappy {
   position: fixed;
@@ -2390,6 +2390,17 @@ body {
   position: relative;
   top: 0;
   z-index: 1; }
+
+.subpage-content {
+  width: 100%; }
+  .subpage-content:nth-child(even) .subpage-inner-img {
+    float: left;
+    padding-left: 0;
+    padding-right: 30px; }
+  .subpage-content:nth-child(even) .subpage-inner-text {
+    padding-left: 30px;
+    padding-right: 0;
+    float: right; }
 
 .content .col-7 {
   padding-right: 30px; }

@@ -1,0 +1,22 @@
+//
+// Content page
+// --------------------------------------------------
+.subpage-content {
+	width:100%;
+	&:nth-child(even) {
+		.subpage-inner-img {
+			float: left;
+			padding-left:0;
+			padding-right:30px;
+		}
+		.subpage-inner-text {
+			padding-left:30px;
+			padding-right: 0;
+			float: right;
+		}
+	}
+}
+
+.subpage-inner-text {
+	
+}

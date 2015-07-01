@@ -1,0 +1,22 @@
+{% extends "base.twig" %}
+{% block content %}
+    
+    <div class="content-headlight" style="background:url({{ page.image }}) center center no-repeat;background-size:cover;">
+    	<div class="container">
+    		<div class="valign">
+    			<h1>{{ page.titre }}</h1>
+    			<p>{{ page.sous_titres }}</p>
+    		</div>    		
+    	</div>    	
+    </div>
+	
+	<div class="page-content">
+		<div class="container">
+			<div class="content">
+				{% include 'partials/bloc-page-content.twig' %}
+			</div>
+		</div>
+	</div>
+	
+
+{% endblock %}
