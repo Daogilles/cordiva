@@ -13,13 +13,9 @@ class PageContentItem {
 
     public function getArgs(){
 
+
         $args = array(
-            'post_type' => 'page',
-            'post_status'=>'publish',
-            'post_parent' => '0',
-            'post__in' => array( 11, 13, 15, 17, 19 ),
-            'orderby' => 'date',
-            'order'   => 'DESC',
+            'page_id' => get_the_id()
         );
 
         return $args;
