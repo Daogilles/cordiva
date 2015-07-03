@@ -40,11 +40,12 @@ class PageContentItem {
                 $tab_result["titre"] = get_field('titre');
                 $tab_result["sous_titres"] = get_field('sous_titres');
 
-                $pages = get_pages('child_of='.$query->post->ID.'&sort_column=post_date&meta_key=image_child&sort_order=desc&parent='.$query->post->ID); 
+                $pages = get_pages('child_of='.$query->post->ID.'&sort_column=post_date&meta_key=image_child&sort_order=desc'); 
                 $count = 0; 
                 foreach($pages as $page) { 
+                    
                     $content = $page->post_content; 
-                    if(!$content) continue;                                     
+                    // if(!$content) continue;                                     
                     $images = get_post_custom($page->ID);
                     $imageID = $images['image_child'][0];
                     $imageUrl = wp_get_attachment_image_src($imageID);                    
@@ -58,6 +59,7 @@ class PageContentItem {
                 
             }
         }
+        
         wp_reset_query();
         return $tab_result;
     }

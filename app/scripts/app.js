@@ -7,6 +7,8 @@
 var $ = require('jquery'),
     TweenMax = require('gsap');
 
+require('waypoints');
+
 TweenLite.defaultEase = Power1.easeInOut;
 
 function App() {
@@ -21,12 +23,15 @@ function App() {
 
         this.resize();
         this.events();
-
+        
         // hide loader :
         // TweenMax.to("#loader", 0.3, { opacity: 0, onComplete: function(e){            
         //     console.log('website load');            
         // }});
-    
+        
+        var menuContentFixedHeight = $('.menu-fixed-content').height();
+        $('.menu-fixed-content').css({'margin-top': -(menuContentFixedHeight/2)+'px'});        
+
         // resize
         // -------------------------
         $(window).resize(function(){
@@ -42,19 +47,21 @@ function App() {
         //
         // Events Menu
         // -------------------------
-        setTimeout(function(){
+        // setTimeout(function(){
             $('.first-menu-li').hover( function(e){
-                TweenMax.to('header', 0.4, {
-                    height: 180,
-                    onStart: function(){
-                        $(this.target[0]).addClass('open active');
-                    },
-                    overwrite: true
-                });
-                TweenMax.to($(this).find('.submenu'), 0.6, {
-                    opacity: 1,
-                    visibility: 'visible'
-                });
+                if ($(this).hasClass('haschild')){
+                    TweenMax.to('header', 0.4, {
+                        height: 180,
+                        onStart: function(){
+                            $(this.target[0]).addClass('open active');
+                        },
+                        overwrite: true
+                    });
+                    TweenMax.to($(this).find('.submenu'), 0.6, {
+                        opacity: 1,
+                        visibility: 'visible'
+                    });
+                }                
             }, function(){
                 TweenMax.to('header', 0.3, {
                     height: 90,
@@ -73,12 +80,38 @@ function App() {
                 dots:true,
                 arrows:true
             });
-        },10);
+
+            // Handler NAV
+            // -------------------------
+            $('.menu-fixed-content a').on('click', function(e){
+                e.preventDefault();
+                $('.menu-fixed-content li').removeClass('active');
+                $(this).parent().addClass('active');
+
+                var top = $( $.attr(this, 'href') ).offset().top;
+
+                $('html, body').animate({
+                    scrollTop: top + (($(window).scrollTop() > top) ? -1 : 1)
+                }, 500);
+                
+            });
+
+            var offsetSection = '0';
+            $('.subpage-content').waypoint(function(direction) {
+                var element = $(this.element);
+                var prev = $(this.element.previousElementSibling);
+                var idLink = element.attr('id');
+                var $fil = $('.menu-fixed-content');
+
+                $('.menu-fixed-content a').parent().removeClass('active');
+                $('.menu-fixed-content a[href="#'+idLink+'"]').parent().addClass('active');
+
+            }, {offset: offsetSection});
+        // },100);
+        
         
 
-        // $(document).on('mouseout', '.first-menu-li', function(e){
-            
-        // });
+        
 
         //
         // Events Bloc Link Infos
@@ -126,4 +159,7 @@ function App() {
 }
 
 // init app
-window.onload = new App();
+// window.onload = new App();
+$(window).load(function(){
+    new App();
+});

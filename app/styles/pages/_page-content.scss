@@ -2,7 +2,27 @@
 // Content page
 // --------------------------------------------------
 .subpage-content {
+	padding:80px 0;
+	position: relative;
 	width:100%;
+	.subpage-border {
+		background-color: $purple;
+		bottom: 0;
+		height: 2px;
+		left: 50%;
+		margin:0 auto;
+		margin-left: -85px;
+		position: absolute;
+		width: 170px;
+	}
+	&:first-child {
+		padding-top:0;
+	}
+	&:last-child {
+		.subpage-border {
+			display: none;
+		}
+	}	
 	&:nth-child(even) {
 		.subpage-inner-img {
 			float: left;
@@ -12,11 +32,50 @@
 		.subpage-inner-text {
 			padding-left:30px;
 			padding-right: 0;
-			float: right;
+			float: right;			
+		}
+	}
+	.subpage-inner-text {
+		h3 {
+			color: $gray;
+			font-size: 28px;
+			font-weight: $light;
+			margin-bottom: 40px;
 		}
 	}
 }
 
-.subpage-inner-text {
-	
+.menu-fixed-content {
+	left:0;	
+	padding:0;
+	position: fixed;
+	top:50%;
+	z-index: 999;
+	li {
+		background-color:$gray-lighter;
+		border-top:1px solid $gray-light;
+		border-bottom:1px solid $gray-light;
+		border-right:1px solid $gray-light;		
+		height: 115px;
+		list-style: none;
+		margin:15px 0;		
+		text-align: right;
+		width: 115px;		
+		@include transition(all 100ms ease);
+		a {
+			color: $gray;
+			height: 100%;
+			font-size: 13px;
+			font-weight: $normal;
+			padding:7px;
+			width: 100%;
+		}
+		&.active, &:hover {
+			background-color:$blue-green;
+			@include transition(all 200ms ease);
+			a {
+				color: $white;
+			}
+		}
+	}
 }

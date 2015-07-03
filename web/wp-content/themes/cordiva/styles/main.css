@@ -1270,7 +1270,8 @@ ul.submenu {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  left: 0;
+  left: 50%;
+  margin-left: -640px;
   top: 90px; }
   ul.submenu li.submenu-li {
     list-style: none;
@@ -2391,17 +2392,6 @@ body {
   top: 0;
   z-index: 1; }
 
-.subpage-content {
-  width: 100%; }
-  .subpage-content:nth-child(even) .subpage-inner-img {
-    float: left;
-    padding-left: 0;
-    padding-right: 30px; }
-  .subpage-content:nth-child(even) .subpage-inner-text {
-    padding-left: 30px;
-    padding-right: 0;
-    float: right; }
-
 .content .col-7 {
   padding-right: 30px; }
 
@@ -2410,3 +2400,68 @@ body {
   .content .col-5 img {
     max-width: 100%;
     width: 100%; }
+
+.subpage-content {
+  padding: 80px 0;
+  position: relative;
+  width: 100%; }
+  .subpage-content .subpage-border {
+    background-color: #890c58;
+    bottom: 0;
+    height: 2px;
+    left: 50%;
+    margin: 0 auto;
+    margin-left: -85px;
+    position: absolute;
+    width: 170px; }
+  .subpage-content:first-child {
+    padding-top: 0; }
+  .subpage-content:last-child .subpage-border {
+    display: none; }
+  .subpage-content:nth-child(even) .subpage-inner-img {
+    float: left;
+    padding-left: 0;
+    padding-right: 30px; }
+  .subpage-content:nth-child(even) .subpage-inner-text {
+    padding-left: 30px;
+    padding-right: 0;
+    float: right; }
+  .subpage-content .subpage-inner-text h3 {
+    color: #5c696f;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 40px; }
+
+.menu-fixed-content {
+  left: 0;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 999; }
+  .menu-fixed-content li {
+    background-color: #f2f2f2;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    height: 115px;
+    list-style: none;
+    margin: 15px 0;
+    text-align: right;
+    width: 115px;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    transition: all 100ms ease; }
+    .menu-fixed-content li a {
+      color: #5c696f;
+      height: 100%;
+      font-size: 13px;
+      font-weight: 400;
+      padding: 7px;
+      width: 100%; }
+    .menu-fixed-content li.active, .menu-fixed-content li:hover {
+      background-color: #37b7b2;
+      -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+      transition: all 200ms ease; }
+      .menu-fixed-content li.active a, .menu-fixed-content li:hover a {
+        color: #FFF; }

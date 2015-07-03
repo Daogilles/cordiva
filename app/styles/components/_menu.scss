@@ -53,7 +53,8 @@ ul.submenu {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    left: 0;
+    left: 50%;
+    margin-left: -640px;
     top: 90px;    
     li.submenu-li {
         list-style: none;

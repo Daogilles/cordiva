@@ -1,12 +1,12 @@
 {% for p in page.subpage %}
-<div class="row subpage-content">
-    
+<div class="row subpage-content" id="{{p.post_name}}">    
     <div class="subpage-inner subpage-inner-text col-7">
-        <h3>{{p.title}}</h3>
+        <h3>{{p.post_title}}</h3>
         {{p.post_content}}
     </div>
     <div class="subpage-inner subpage-inner-img col-5">
         <img src="{{p.image_child}}" alt="">
     </div>
+    <div class="subpage-border"></div>
 </div>
 {% endfor %}
