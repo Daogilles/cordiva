@@ -8,14 +8,28 @@
 
 	<body class="{{body_class}}" data-template="base.twig">
 		{% include 'partials/bloc-link.twig' %}
+		<div class="nav-mobile">
+	        <ul class="first-menu">
+	        {% for item in main_menu.items %}            
+	            <li class="first-menu-li{% if item.children %} haschild{% endif %}" data-id={{item.id}}>
+	                <a href="{{item.link}}" class="inner first-menu-link" title="{{item.title}}" id="{{ item.id }}">
+	                    <span class="first-menu-item">{{item.title}}</span>                    
+	                </a>                        
+	            </li>
+	        {% endfor %}
+	        </ul>
+		</div>
 
 		<header class="header" >
 			<div class="header-bg"></div>
 			<div class="header-content">
-				{% block header %}									
-										
-					{% include 'partials/main-menu.twig' %}						
-					
+				{% block header %}
+					<div class="principal-menu">										
+						{% include 'partials/main-menu.twig' %}					
+					</div>
+					<div class="mobile-menu">					
+						{% include 'partials/mobile-menu.twig' %}
+					</div>
 				{% endblock %}
 			</div>			
 		</header>

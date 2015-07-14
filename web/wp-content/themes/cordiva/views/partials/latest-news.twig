@@ -2,9 +2,9 @@
 	<div class="container">
 		<h1 class="home-title">Dernières actualités</h1>
 		<div class="news-wrapper">
-			<div class="row">
+			<div class="row-sm-40 row-md-40 row-lg-40">
 				{% for news in latest_news %}
-			        <div class="col-4 news-item">
+			        <div class="col-sm-12 col-md-6 col-lg-4 news-item">
 			        	<div class="news-inner">
 			        		<div class="news-image">
 			        			<img src="{{ news.image }}" alt="" class="valign">	

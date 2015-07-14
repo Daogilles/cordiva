@@ -47,12 +47,37 @@ body {
 .wrapper {
     height: 100%;
     margin: 0 auto;
-    width: 1280px;
+}
+
+@media (max-width: $screen-sm) {
+    .wrapper {
+        padding: 0 10px;
+        width: 320px;
+    }
+}
+
+@media (min-width: $screen-sm) {
+    .wrapper {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1239px) {
+    .wrapper {
+        width: 960px;
+    }
+}
+
+
+@media (min-width: $screen-lg) {
+    .wrapper {
+        width: 1280px;
+    }
 }
 
 .container {
     margin: 0 auto;
-    width: 1024px;
+    // width: 1024px;
 
     .content {        
         p {

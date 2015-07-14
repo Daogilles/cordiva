@@ -17,6 +17,49 @@
     }
 }
 
+/**
+ * Custom rows
+ * @param  {[type]} $screen  [description]
+ * @param  {[type]} $gutter: $grid-gutter-width [description]
+ * @return {[type]}          [description]
+ */
+@mixin make-custom-row($screen, $gutter: $grid-gutter-width) {
+    @include make-row($gutter);
+
+    @if ($screen == xs) {
+        @for $i from 1 to 13 {
+            .col-xs-#{$i} {
+                width: percentage($i/12);
+            }
+        }
+    }
+
+    @if ($screen == sm) {
+        @for $i from 1 to 13 {
+            .col-sm-#{$i} {
+                width: percentage($i/12);
+            }
+        }
+    }
+
+    @if ($screen == md) {
+        @for $i from 1 to 13 {
+            .col-md-#{$i} {
+                width: percentage($i/12);
+            }
+        }
+    }
+
+    @if ($screen == lg) {
+        @for $i from 1 to 13 {
+            .col-lg-#{$i} {
+                width: percentage($i/12);
+            }
+        }
+    }
+}
+
+
 //use (http://sass-guidelin.es/)
 
 // .foo {

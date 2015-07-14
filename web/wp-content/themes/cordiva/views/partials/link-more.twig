@@ -4,13 +4,14 @@
 	</div>
 	<div class="link-more-content">
 		<div class="container">
-			{% for link_more in home.en_savoir_plus %}
-				<a href="{{ link_more.lien_more }}" class="link-more-bloc">
-					<span class="link-more-hover"></span>
-					<span class="valign">{{ link_more.texte_more }}</span>
-				</a>
-			{% endfor %}
-			
+			<div class="row-sm-40 row-md-40 row-lg-40">
+				{% for link_more in home.en_savoir_plus %}
+					<a href="{{ link_more.lien_more }}" class="link-more-bloc col-sm-12 col-md-4 col-lg-4">
+						<span class="link-more-hover"></span>
+						<span class="valign">{{ link_more.texte_more }}</span>
+					</a>
+				{% endfor %}
+			</div>						
 		</div>
 	</div>
 	

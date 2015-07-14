@@ -43,7 +43,9 @@ class PageContentItem {
                 $pages = get_pages('child_of='.$query->post->ID.'&sort_column=post_date&meta_key=image_child&sort_order=desc'); 
                 $count = 0; 
                 foreach($pages as $page) { 
-                    
+                    if ($page->ID == 140) {
+                        $page->lexique = do_shortcode('[namedirectory dir="3"]');
+                    }
                     $content = $page->post_content; 
                     // if(!$content) continue;                                     
                     $images = get_post_custom($page->ID);

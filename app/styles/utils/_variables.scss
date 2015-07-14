@@ -1,21 +1,55 @@
 //
 // Variables
 // --------------------------------------------------
+/* Sizes */
+$grid-gutter-width: 0; //reset grid gutter
+$max-width: 1240px;
+$break--medium: 1239px;
+$break--small: 1023px;
+$break--xSmall: 767px;
+
+$screen-xs: 670px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1240px;
+
+$container-tablet:         $screen-sm;
+$container-desktop:        $screen-md;
+$container-large-desktop:  $screen-lg;
+
+/* Medias queries */
+$desktop: "only screen and (min-width : " + $screen-md + ")";
+$tablet-landscape: "only screen and (max-width : " + $screen-md + ") and (min-width : " + $screen-sm + ")";
+$tablet-portrait: "only screen and (min-width : " + $break--xSmall + ")";
+
+/* Grid */
+$gutter-sizes: (
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    60,
+    80
+);
 
 $url: '../images/';
 
 // Brand colors
 // -------------------------
 
-$gray-dark:		#232c30;
-$gray:			#5c696f;
-$gray-light:	#dedede;
-$gray-lighter:	#f2f2f2;
+$gray-dark:		   #232c30;
+$gray:			     #5c696f;
+$gray-light:	   #dedede;
+$gray-lighter:	 #f2f2f2;
+$gray-p:         #7f7e7f;
 
-$blue-dark:		#5c6c93;
-$blue:			#1e343e;
-$blue-sky:		#5fafbd;
-$blue-green:	#37b7b2;
+$blue-dark:		   #5c6c93;
+$blue:			     #1e343e;
+$blue-sky:		   #5fafbd;
+$blue-green:	   #37b7b2;
 
 $white :        #FFF;
 $black :        #000;

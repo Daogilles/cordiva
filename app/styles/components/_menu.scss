@@ -69,6 +69,8 @@ ul.submenu {
 }
 
 header {
+    @include transform(translateY(0));
+    @include transition(all 400ms ease);
     &.open {
         .header-submenu {
             height: 90px;
@@ -78,6 +80,13 @@ header {
         ul.submenu {
             z-index: 10;
         }
+    }
+    &.open-mobile {
+        @include transform(translateY(200px));
+        @include transition(all 400ms ease);
+    }
+    .container {
+        padding-right:0;
     }
 }
 
@@ -94,5 +103,104 @@ header {
             font-size: 12px;
             font-weight: $normal;
         }
+    }
+}
+
+.mobile-menu-first {
+    height: 65px;
+    display: none;
+    width: 100%;
+    .logo-wrapper {
+        width: 75%;
+        .logo-center {
+            height: 65px;
+            line-height: 65px;
+        }
+    }
+    .mobile-menu-open {
+        background:url('../images/menu.png') center center no-repeat;
+        background-size:100%;
+        cursor: pointer;
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 15px;
+        width: 25px;
+    }
+}
+
+
+.nav-mobile {
+    background-color:$gray-lighter;
+    @include transform(translateY(-200px));
+    @include transition(all 400ms ease);
+    display: none;
+    &.open-mobile {
+        opacity: 1;
+        visibility: visible;
+        @include transform(translateY(0));
+        @include transition(all 400ms ease);
+    }
+    .first-menu {
+        padding:0;
+    }
+    .first-menu-li {
+        border-bottom:1px solid $gray-light;
+        height: 40px;
+        line-height: 40px;
+        list-style:none;
+        text-align: center;
+        width: 100%;
+        a {
+            color: $gray;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: $screen-sm) {
+    header {
+        height: 65px;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .mobile-menu-first {
+        display: block;
+    }
+    .main-content {
+        @include transform(translateY(-200px));
+        @include transition(all 400ms ease);
+        &.open-mobile {
+            @include transform(translateY(0));
+            @include transition(all 400ms ease);
+        }
+    }
+}
+
+@media #{$tablet-landscape} {
+    .main-menu {
+        li.first-menu-li {
+            padding: 0 9px;
+            a.first-menu-link {
+                color: $gray;
+                font-size: 11px;
+            }
+        }   
+    }
+    ul.submenu {
+        display: none;
+    }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+    .main-menu {
+        li.first-menu-li {
+            padding: 0 12px;
+            a.first-menu-link {
+                color: $gray;
+                font-size: 13px;
+            }
+        }   
     }
 }

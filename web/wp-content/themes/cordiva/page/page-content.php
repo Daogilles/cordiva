@@ -15,4 +15,5 @@ $context["page"] = $result;
 
 $templates = array( 'page-templates/page-content.twig' );
 
+
 Timber::render($templates, $context);

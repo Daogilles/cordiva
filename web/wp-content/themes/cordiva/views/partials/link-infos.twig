@@ -5,12 +5,14 @@
 
 	<div class="link-infos-content">
 		<div class="container">
-			{% for dispositif in home.dispositif %}
-				<a href="{{ dispositif.lien }}" class="link-infos-bloc">
+			<div class="row-sm-40 row-md-40 row-lg-40">
+				{% for dispositif in home.dispositif %}
+				<a href="{{ dispositif.lien }}" class="link-infos-bloc col-sm-12 col-md-4 col-lg-4">
 					<span class="link-infos-hover"></span>
 					<span class="valign">{{ dispositif.texte }}</span>
 				</a>
-			{% endfor %}
+				{% endfor %}
+			</div>			
 		</div>
 	</div>
 	

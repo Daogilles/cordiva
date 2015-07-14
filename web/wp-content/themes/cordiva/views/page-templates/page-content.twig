@@ -4,7 +4,8 @@
 	{% include 'partials/bloc-menu-content.twig' %}
 
     <div class="content-headlight" style="background:url({{ page.image }}) center center no-repeat;background-size:cover;">
-    	<div class="container">
+    	<div class="bg-img-mobile" style="background:url({{ page.image }}) center center no-repeat;background-size:cover;"></div>
+    	<div class="wrapper headtitle">
     		<div class="valign">
     			<h1>{{ page.titre }}</h1>
     			<p>{{ page.sous_titres }}</p>
@@ -13,10 +14,10 @@
     </div>
 	
 	<div class="page-content">
-		<div class="container">
+		<div class="wrapper">
 			<div class="content">
-				{% include 'partials/bloc-page-content.twig' %}
-			</div>
+				{% include 'partials/bloc-page-content.twig' %}				
+			</div>			
 		</div>
 	</div>
 	

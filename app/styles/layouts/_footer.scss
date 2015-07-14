@@ -15,7 +15,7 @@ footer {
 	#footer-top-wrapper {
 		position: relative;
 		top: 175px;
-		.col-4 {
+		.footer-inner{
 			height: 245px;
 			position: relative;
 		}
@@ -121,6 +121,61 @@ footer {
 				margin-left: 10px;
 				position: absolute;
 			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm) { 
+	footer {
+		height: auto;		
+	}
+	#footer-top {
+		background: transparent;
+		height: 750px;
+		#footer-top-wrapper {
+			margin: 0 auto;
+			top: 40px;
+			width: 100%;
+			.footer-inner {
+				padding:0;
+				margin: 0;
+				&:last-child {
+					height: 150px;
+					margin-top: 30px;
+				}
+			}
+			a{
+				width: calc(100% - 20px);
+			}
+			h2 {
+				color: $purple;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+		}
+		.row-sm-40 {
+			margin: 0;
+		}
+		.footer-newsletter {
+			form {
+				input {
+					width: 90%;
+				}
+			}
+		}
+	}
+	#footer-bottom {
+		height: auto;
+	}
+	.text-center {
+		margin-top: 20px;
+	}
+
+	.footer-menu {
+		li {
+			display: block;
+			text-align: center;
+			width: 100%;
 		}
 	}
 }

@@ -168,3 +168,10 @@ h1.home-title {
     margin: 30px 0;
     text-align: center;
 }
+
+@media (max-width: $screen-sm) {
+    h1.home-title {
+        font-size: 28px;
+    }
+}
+

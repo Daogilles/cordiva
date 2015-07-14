@@ -57,3 +57,24 @@
         z-index: 2;
     }
 }
+
+@media (max-width: $screen-sm) {
+    .link-infos {
+        margin-bottom: 100px;
+        .link-infos-content {
+            height: 276px;
+        }
+        .link-infos-bloc {
+            height: 92px;
+            line-height: 92px;
+            margin-top: 0 !important;
+            width: 100%;
+            &:nth-child(2){
+                border-top: 1px solid $white;
+                border-bottom: 1px solid $white;
+                border-right:none;
+                border-left:none;
+            }
+        }
+    }    
+}
