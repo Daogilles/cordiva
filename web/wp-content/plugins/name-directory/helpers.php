@@ -113,7 +113,7 @@ function name_directory_name_exists_in_directory($name, $dir)
 function name_directory_make_plugin_url($index = 'name_directory_startswith', $exclude = null)
 {
     $parsed = parse_url($_SERVER['REQUEST_URI']);
-    parse_str($parsed['query'], $url);
+    parse_str(isset($parsed['query']), $url);
 
     if(! empty($exclude))
     {

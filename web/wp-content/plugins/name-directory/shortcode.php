@@ -149,6 +149,7 @@ function show_directory($attributes)
     ));
 
     $name_filter = array();
+    
     if(isset($_GET['name_directory_startswith']))
     {
         $name_filter['character'] = $_GET['name_directory_startswith'];
@@ -156,6 +157,8 @@ function show_directory($attributes)
     else if(! empty($attributes['start_with']) && empty($_GET['name-directory-search-value']))
     {
         $name_filter['character'] = $attributes['start_with'];
+    }else {
+        $name_filter['character'] = 'A';
     }
 
     $str_all = __('All', 'name-directory');

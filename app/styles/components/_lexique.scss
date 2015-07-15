@@ -1,0 +1,32 @@
+//
+// Bloc Lexique
+// --------------------------------------------------
+
+.name_directory_index {
+    .name_directory_startswith {
+        color: $gray;
+        font-size: 20px;
+        padding: 0 5px;
+        &.inactive {
+            color: $gray-light;
+            cursor: default;
+            &:hover {
+                color: $gray-light;
+            }
+        }
+        &:hover {
+            color: $purple;
+        }
+    }    
+}
+
+.name_directory_name_box {
+    color: $gray-p;
+    font-size: 13px;
+    margin: 20px 0;
+    strong {
+        color: $purple;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+}

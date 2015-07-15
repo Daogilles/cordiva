@@ -85,7 +85,7 @@ function App() {
                     });
                 }                
             }, function(){
-                TweenMax.to('header', 0.3, {
+                TweenMax.to('header', 0.4, {
                     height: 90,
                     onStart: function(){
                         $(this.target[0]).removeClass('open active');
@@ -173,6 +173,7 @@ function App() {
         if ($(window).width() < 769){
             $('body').addClass('mobile');
             $('.menu-fixed-content').hide();
+            $('.mobile-menu').show();
             $('.mobile-menu-open').show();
             $('.principal-menu').hide();
             $('.bloc-link-wrapper').hide();
@@ -181,9 +182,11 @@ function App() {
                 arrows:false
             });
         }else {
+            $("body").removeClass('mobile');
             $('.principal-menu').show();
             $('.mobile-menu').hide();
             $('.menu-fixed-content').show();
+            _this.events();
         }
     };
 

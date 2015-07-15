@@ -3418,9 +3418,9 @@ table {
   position: absolute;
   width: 100%;
   z-index: 1;
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  transition: all 400ms ease; }
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease; }
 
 ul.submenu {
   height: 90px;
@@ -3447,10 +3447,7 @@ header {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  transition: all 400ms ease; }
+  transform: translateY(0); }
   header.open .header-submenu {
     height: 90px;
     z-index: 9;
@@ -3470,6 +3467,11 @@ header {
     transition: all 400ms ease; }
   header .container {
     padding-right: 0; }
+
+body.mobile header {
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  transition: all 400ms ease; }
 
 .footer-menu {
   text-align: right; }
@@ -3577,6 +3579,27 @@ header {
     .main-menu li.first-menu-li a.first-menu-link {
       color: #5c696f;
       font-size: 13px; } }
+
+.name_directory_index .name_directory_startswith {
+  color: #5c696f;
+  font-size: 20px;
+  padding: 0 5px; }
+  .name_directory_index .name_directory_startswith.inactive {
+    color: #dedede;
+    cursor: default; }
+    .name_directory_index .name_directory_startswith.inactive:hover {
+      color: #dedede; }
+  .name_directory_index .name_directory_startswith:hover {
+    color: #890c58; }
+
+.name_directory_name_box {
+  color: #7f7e7f;
+  font-size: 13px;
+  margin: 20px 0; }
+  .name_directory_name_box strong {
+    color: #890c58;
+    font-size: 13px;
+    text-transform: uppercase; }
 
 .bloc-link-wrapper {
   position: fixed;

@@ -42,7 +42,7 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    @include transition(all 400ms ease);
+    @include transition(all 500ms ease);
 }
 
 ul.submenu {
@@ -70,7 +70,7 @@ ul.submenu {
 
 header {
     @include transform(translateY(0));
-    @include transition(all 400ms ease);
+    // @include transition(all 400ms ease);
     &.open {
         .header-submenu {
             height: 90px;
@@ -90,7 +90,13 @@ header {
     }
 }
 
-
+body {
+    &.mobile {
+        header {
+            @include transition(all 400ms ease);
+        }
+    }
+}
 
 .footer-menu {
     text-align: right;

@@ -18,7 +18,7 @@
                     <ul class="submenu submenu-{{item.id}} wrapper"> 
                         {% for child in item.children %}  
                         <li class="submenu-li">
-                            <a href="{{child.link}}" title="{{child.title}}" class="submenu-link" id="{{child.id}}">
+                            <a href="{{item.link}}" title="{{child.title}}" class="submenu-link" id="{{child.id}}">
                                 <span>{{child.title}}</span>
                             </a>
                         </li>
