@@ -99,7 +99,7 @@
 
 .slick-next {
     background:url('../images/arrow-next.png') center center no-repeat;
-    right: 0;
+    right: 200px;
     @include transform(translateX(-30px));
 }
 

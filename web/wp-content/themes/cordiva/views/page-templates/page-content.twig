@@ -16,7 +16,18 @@
 	<div class="page-content">
 		<div class="wrapper">
 			<div class="content">
-				{% include 'partials/bloc-page-content.twig' %}				
+				{% if page.contact is not empty %}
+					{% include 'partials/bloc-page-content.twig' %}
+					<span class='contact-title'>Contacts</span>
+					{{page.contact}}
+				{% elseif page.actu is not empty %}
+					{% include 'partials/bloc-page-content.twig' %}
+					{% include 'partials/latest-news.twig' %}
+				{% elseif page.lexique is not empty %}
+					{{page.lexique}}
+				{% else %}
+					{% include 'partials/bloc-page-content.twig' %}		
+				{% endif %}
 			</div>			
 		</div>
 	</div>

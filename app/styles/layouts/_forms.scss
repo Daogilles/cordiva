@@ -145,7 +145,8 @@ form {
 
     textarea {
         // height: 30px;
-        border: 1px solid $gray-light;
+        color: $gray;
+        border: 1px solid $gray;
         background-color: $white;
         width: 100%;
         margin: 0;
@@ -155,12 +156,13 @@ form {
         display: block;
         
         -webkit-appearance: none;
-        border-radius: 0;
+        border-radius: 10px;
 
         &:focus {
             outline: none;
             // box-shadow: 0 0 5px rgba(0,0,0,.2);
-            border-color: $black;
+            background-color:$gray-lighter;
+            // border-color: $black;
         }
 
         &:disabled {
@@ -178,10 +180,10 @@ form {
         }
     }
 
-    input[type="text"], input[type="email"], input[type="password"] {
-        height: 30px;
-        line-height: 30px;
-        border: none;
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid $gray;
         background-color: $white;
         margin: 0;
         
@@ -189,12 +191,12 @@ form {
         display: block;
         
         -webkit-appearance: none;
-        border-radius: 0;
+        border-radius: 10px;
 
         color: $gray;
-        font-size: 28px;
-        font-weight: $medium;
-
+        font-size: 18px;
+        font-weight: $normal;
+        width: 100%;
 
         &.input-icn {
             padding-left: 75px;
@@ -203,7 +205,7 @@ form {
         &:focus {
             outline: none;
             // box-shadow: 0 0 5px rgba(0,0,0,.2);
-            background-color: $gray-light;
+            background-color: $gray-lighter;
             @include placeholder {
                 color: $gray;
             }
@@ -308,6 +310,26 @@ input[type="submit"], select, button {
     &:focus {
         outline: none;
     }
+}
+
+input[type='submit'].wpcf7-submit {
+    background:url('../images/arrow-submit.png') 90% center no-repeat;
+    font-size: 18px;
+    font-weight: $normal;
+    background-color:$purple;
+    border-radius: 10px;
+    height: 50px;
+    line-height: 50px;
+    margin-top:30px;
+    text-align: left;
+    float: right;
+    padding-left:20px;
+    position: relative;
+    width: 15%;
+    &:hover {
+        background-color:$purple-dark;
+    }
+    
 }
 
 

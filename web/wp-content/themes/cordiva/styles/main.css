@@ -466,15 +466,15 @@ body {
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 768px; } }
+    width: 670px; } }
 
 @media (min-width: 1025px) and (max-width: 1239px) {
   .wrapper {
-    width: 960px; } }
+    width: 860px; } }
 
 @media (min-width: 1240px) {
   .wrapper {
-    width: 1280px; } }
+    width: 1140px; } }
 
 .container {
   margin: 0 auto; }
@@ -3177,7 +3177,8 @@ form .control-group {
     position: relative; }
 
 form textarea {
-  border: 1px solid #dedede;
+  color: #5c696f;
+  border: 1px solid #5c696f;
   background-color: #FFF;
   width: 100%;
   margin: 0;
@@ -3185,10 +3186,10 @@ form textarea {
   padding: 10px;
   display: block;
   -webkit-appearance: none;
-  border-radius: 0; }
+  border-radius: 10px; }
   form textarea:focus {
     outline: none;
-    border-color: #000; }
+    background-color: #f2f2f2; }
   form textarea:disabled {
     border-color: #5c696f;
     background-color: #dedede;
@@ -3210,66 +3211,67 @@ form textarea {
   form textarea:-ms-input-placeholder {
     color: #dedede; }
 
-form input[type="text"], form input[type="email"], form input[type="password"] {
-  height: 30px;
-  line-height: 30px;
-  border: none;
+form input[type="text"], form input[type="email"], form input[type="password"], form input[type="tel"] {
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #5c696f;
   background-color: #FFF;
   margin: 0;
   padding: 0 10px;
   display: block;
   -webkit-appearance: none;
-  border-radius: 0;
+  border-radius: 10px;
   color: #5c696f;
-  font-size: 28px;
-  font-weight: 500; }
-  form input[type="text"].input-icn, form input[type="email"].input-icn, form input[type="password"].input-icn {
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%; }
+  form input[type="text"].input-icn, form input[type="email"].input-icn, form input[type="password"].input-icn, form input[type="tel"].input-icn {
     padding-left: 75px; }
-  form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus {
+  form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus, form input[type="tel"]:focus {
     outline: none;
-    background-color: #dedede; }
-    form input[type="text"]:focus::-webkit-input-placeholder, form input[type="email"]:focus::-webkit-input-placeholder, form input[type="password"]:focus::-webkit-input-placeholder {
+    background-color: #f2f2f2; }
+    form input[type="text"]:focus::-webkit-input-placeholder, form input[type="email"]:focus::-webkit-input-placeholder, form input[type="password"]:focus::-webkit-input-placeholder, form input[type="tel"]:focus::-webkit-input-placeholder {
       color: #5c696f; }
-    form input[type="text"]:focus::-moz-placeholder, form input[type="email"]:focus::-moz-placeholder, form input[type="password"]:focus::-moz-placeholder {
+    form input[type="text"]:focus::-moz-placeholder, form input[type="email"]:focus::-moz-placeholder, form input[type="password"]:focus::-moz-placeholder, form input[type="tel"]:focus::-moz-placeholder {
       color: #5c696f; }
-    form input[type="text"]:focus:-moz-placeholder, form input[type="email"]:focus:-moz-placeholder, form input[type="password"]:focus:-moz-placeholder {
+    form input[type="text"]:focus:-moz-placeholder, form input[type="email"]:focus:-moz-placeholder, form input[type="password"]:focus:-moz-placeholder, form input[type="tel"]:focus:-moz-placeholder {
       color: #5c696f; }
-    form input[type="text"]:focus:-ms-input-placeholder, form input[type="email"]:focus:-ms-input-placeholder, form input[type="password"]:focus:-ms-input-placeholder {
+    form input[type="text"]:focus:-ms-input-placeholder, form input[type="email"]:focus:-ms-input-placeholder, form input[type="password"]:focus:-ms-input-placeholder, form input[type="tel"]:focus:-ms-input-placeholder {
       color: #5c696f; }
-  form input[type="text"]:disabled, form input[type="email"]:disabled, form input[type="password"]:disabled {
+  form input[type="text"]:disabled, form input[type="email"]:disabled, form input[type="password"]:disabled, form input[type="tel"]:disabled {
     border-color: #5c696f;
     background-color: #dedede;
     color: #232c30; }
-    form input[type="text"]:disabled::-webkit-input-placeholder, form input[type="email"]:disabled::-webkit-input-placeholder, form input[type="password"]:disabled::-webkit-input-placeholder {
+    form input[type="text"]:disabled::-webkit-input-placeholder, form input[type="email"]:disabled::-webkit-input-placeholder, form input[type="password"]:disabled::-webkit-input-placeholder, form input[type="tel"]:disabled::-webkit-input-placeholder {
       color: #232c30; }
-    form input[type="text"]:disabled::-moz-placeholder, form input[type="email"]:disabled::-moz-placeholder, form input[type="password"]:disabled::-moz-placeholder {
+    form input[type="text"]:disabled::-moz-placeholder, form input[type="email"]:disabled::-moz-placeholder, form input[type="password"]:disabled::-moz-placeholder, form input[type="tel"]:disabled::-moz-placeholder {
       color: #232c30; }
-    form input[type="text"]:disabled:-moz-placeholder, form input[type="email"]:disabled:-moz-placeholder, form input[type="password"]:disabled:-moz-placeholder {
+    form input[type="text"]:disabled:-moz-placeholder, form input[type="email"]:disabled:-moz-placeholder, form input[type="password"]:disabled:-moz-placeholder, form input[type="tel"]:disabled:-moz-placeholder {
       color: #232c30; }
-    form input[type="text"]:disabled:-ms-input-placeholder, form input[type="email"]:disabled:-ms-input-placeholder, form input[type="password"]:disabled:-ms-input-placeholder {
+    form input[type="text"]:disabled:-ms-input-placeholder, form input[type="email"]:disabled:-ms-input-placeholder, form input[type="password"]:disabled:-ms-input-placeholder, form input[type="tel"]:disabled:-ms-input-placeholder {
       color: #232c30; }
-  form input[type="text"]::-webkit-input-placeholder, form input[type="email"]::-webkit-input-placeholder, form input[type="password"]::-webkit-input-placeholder {
+  form input[type="text"]::-webkit-input-placeholder, form input[type="email"]::-webkit-input-placeholder, form input[type="password"]::-webkit-input-placeholder, form input[type="tel"]::-webkit-input-placeholder {
     color: #5c696f;
     line-height: 70px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 28px;
     font-weight: 400; }
-  form input[type="text"]::-moz-placeholder, form input[type="email"]::-moz-placeholder, form input[type="password"]::-moz-placeholder {
+  form input[type="text"]::-moz-placeholder, form input[type="email"]::-moz-placeholder, form input[type="password"]::-moz-placeholder, form input[type="tel"]::-moz-placeholder {
     color: #5c696f;
     line-height: 70px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 28px;
     font-weight: 400; }
-  form input[type="text"]:-moz-placeholder, form input[type="email"]:-moz-placeholder, form input[type="password"]:-moz-placeholder {
+  form input[type="text"]:-moz-placeholder, form input[type="email"]:-moz-placeholder, form input[type="password"]:-moz-placeholder, form input[type="tel"]:-moz-placeholder {
     color: #5c696f;
     line-height: 70px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 28px;
     font-weight: 400; }
-  form input[type="text"]:-ms-input-placeholder, form input[type="email"]:-ms-input-placeholder, form input[type="password"]:-ms-input-placeholder {
+  form input[type="text"]:-ms-input-placeholder, form input[type="email"]:-ms-input-placeholder, form input[type="password"]:-ms-input-placeholder, form input[type="tel"]:-ms-input-placeholder {
     color: #5c696f;
     line-height: 70px;
     -webkit-font-smoothing: antialiased;
@@ -3354,6 +3356,23 @@ input[type="submit"], select, button {
   color: #FFF; }
   input[type="submit"]:focus, select:focus, button:focus {
     outline: none; }
+
+input[type='submit'].wpcf7-submit {
+  background: url("../images/arrow-submit.png") 90% center no-repeat;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #890c58;
+  border-radius: 10px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 30px;
+  text-align: left;
+  float: right;
+  padding-left: 20px;
+  position: relative;
+  width: 15%; }
+  input[type='submit'].wpcf7-submit:hover {
+    background-color: #340a22; }
 
 table {
   max-width: 100%;
@@ -3824,7 +3843,7 @@ body.mobile header {
     .news-item .news-inner .news-image {
       background-color: #FFF;
       border: 1px solid #dedede;
-      height: 150px;
+      height: auto;
       line-height: 150px;
       width: 100%; }
       .news-item .news-inner .news-image img {
@@ -4285,7 +4304,7 @@ span.icon {
 
 .slick-next {
   background: url("../images/arrow-next.png") center center no-repeat;
-  right: 0;
+  right: 200px;
   -webkit-transform: translateX(-30px);
   -moz-transform: translateX(-30px);
   -ms-transform: translateX(-30px);
@@ -4802,6 +4821,18 @@ body {
   .content .col-5 img {
     max-width: 100%;
     width: 100%; }
+
+.contact-title {
+  color: #5c696f;
+  font-size: 28px;
+  font-weight: 300; }
+
+.wpcf7 {
+  margin-bottom: 50px !important; }
+  .wpcf7 p {
+    color: #5c696f;
+    font-size: 18px;
+    font-weight: 400; }
 
 .bg-img-mobile {
   display: none; }
