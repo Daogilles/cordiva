@@ -29,6 +29,7 @@ class BootstrapSite extends TimberSite {
         $context['home_url'] = get_home_url();
         $context['img_dir'] = get_template_directory_uri().'/images';
         $context['link_decouvrir'] = get_permalink('11');
+        $context['link_actualites'] = get_permalink('19');
         $context['link_contact_particulier'] = get_permalink('164');
         $context['link_contact_pro'] = get_permalink('167');
         $context['is_home'] = is_front_page();        

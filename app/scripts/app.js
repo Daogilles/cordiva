@@ -109,6 +109,23 @@ function App() {
                 $('.link-infos-bloc').removeClass('mini');
                 $(this).removeClass('expand');
             });
+
+            $(document).on('click', '.video-fancybox', function(e) {
+                $.fancybox({
+                    'padding'       : 0,
+                    'autoScale'     : false,
+                    'transitionIn'  : 'none',
+                    'transitionOut' : 'none',
+                    'title'         : this.title,
+                    'width'         : 640,
+                    'height'        : 385,
+                    'href'          : this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+                    'type'          : 'swf'
+                });
+
+
+                return false;
+            });
         }
             $('.headlight-slider').slick({
                 dots:true,

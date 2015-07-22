@@ -74,6 +74,7 @@ class Bootstrap_Public {
 		 */
 
 		wp_enqueue_style( 'main', get_template_directory_uri(  ) . '/styles/main.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'fancybox', get_template_directory_uri(  ) . '/styles/jquery.fancybox.css', array(), $this->version, 'all' );
 
 	}
 
@@ -98,6 +99,7 @@ class Bootstrap_Public {
 
 		wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/bundle.js', array(), $this->version, false );
 		wp_enqueue_script( 'slick', get_template_directory_uri() . '/scripts/slick/slick.js', array(), $this->version, false );
+		wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/scripts/jquery.fancybox.js', array(), $this->version, false );
 
 	}
 
