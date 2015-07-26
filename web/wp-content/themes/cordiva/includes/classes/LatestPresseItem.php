@@ -5,18 +5,18 @@
  * Date: 30/06/2015
  */
 
-class LatestNewsItem {
+class LatestPresseItem {
 
     public function __construct(){
 
     }
 
-    public function getArgs($limit, $category){
+    public function getArgs($limit){
 
         $args = array(
-            'post_type' => 'post',
+            'post_type' => 'presse',
             'post_status'=>'publish',
-            'category_name' => $category,
+            // 'category_name' => $category,
             'posts_per_page'=> $limit,
             'orderby' => 'date',
             'order'   => 'DESC',
@@ -25,7 +25,7 @@ class LatestNewsItem {
         return $args;
     }
 
-    public function getLatestNews( $args ){
+    public function getLatestPresse( $args ){
 
         $query = new WP_Query( $args );
         $tab_result = array();
