@@ -2944,6 +2944,7 @@ header {
     z-index: 1; }
   header .header-content {
     height: 100%;
+    overflow: hidden;
     position: relative;
     z-index: 9; }
   header .logo-wrapper {
@@ -3013,7 +3014,10 @@ footer {
       margin-top: 10px; }
       #footer-top .footer-newsletter form input {
         float: left;
-        width: 60%; }
+        width: 60%;
+        border-radius: 0;
+        height: 31px;
+        line-height: 31px; }
       #footer-top .footer-newsletter form input[type=submit] {
         background-color: #889094;
         height: 30px;
@@ -3026,6 +3030,7 @@ footer {
   height: 175px;
   font-size: 12px;
   font-weight: 400;
+  padding-top: 15px;
   width: 100%; }
   #footer-bottom .row:first-child {
     padding-top: 25px; }
@@ -4269,7 +4274,7 @@ span.icon {
   margin-left: -25px;
   padding: 0;
   position: absolute;
-  width: 65px; }
+  width: auto; }
   .slick-dots li {
     background-color: #FFF;
     border-radius: 100%;
@@ -4279,7 +4284,7 @@ span.icon {
     list-style: none;
     position: relative;
     width: 15px; }
-    .slick-dots li:nth-child(2) {
+    .slick-dots li:nth-child(odd) {
       margin: 0 10px; }
     .slick-dots li:hover {
       background-color: #890c58; }
@@ -4843,6 +4848,18 @@ body {
 
 .bg-img-mobile {
   display: none; }
+
+.article-content h3 {
+  color: #5c696f;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+
+.article-content img {
+  height: 300px;
+  max-width: 100%;
+  margin-bottom: 40px; }
 
 .subpage-content {
   padding: 80px 0;

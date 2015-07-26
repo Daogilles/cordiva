@@ -119,7 +119,25 @@ function App() {
                     'title'         : this.title,
                     'width'         : 640,
                     'height'        : 385,
+                    // 'href'          : this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+                    'href'          : this.href,
+                    'type'          : 'iframe'
+                });
+
+
+                return false;
+            });
+            $(document).on('click', '.video-fancybox-link', function(e) {
+                $.fancybox({
+                    'padding'       : 0,
+                    'autoScale'     : false,
+                    'transitionIn'  : 'none',
+                    'transitionOut' : 'none',
+                    'title'         : this.title,
+                    'width'         : 640,
+                    'height'        : 385,
                     'href'          : this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+                    // 'href'          : this.href,
                     'type'          : 'swf'
                 });
 

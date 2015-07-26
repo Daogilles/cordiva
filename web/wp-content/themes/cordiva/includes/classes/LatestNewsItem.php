@@ -42,7 +42,7 @@ class LatestNewsItem {
                 $newDate = date("d M Y", strtotime($originalDate));
                 $tab_result[$cpt]["date"] = $newDate;
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $query->post->ID ), 'full' );
-                $tab_result[$cpt]["image"] = wpthumb($image[0],'width=300&height=150&crop=1');
+                $tab_result[$cpt]["image"] = wpthumb($image[0],'width=1248&height=1024&crop=1');
                 $cpt++;
             }
         }

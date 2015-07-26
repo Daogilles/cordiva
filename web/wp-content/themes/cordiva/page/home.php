@@ -13,7 +13,7 @@ $slide = new SlideItem();
 $context = Timber::get_context();
 
 $post_per_page = 6;
-$slide_per_page = 3;
+// $slide_per_page = 3;
 
 $argsHome = $home->getArgs();
 $resultHome = $home->getHomeItem($argsHome);
@@ -25,7 +25,7 @@ $result = $latest_news->getLatestNews($args);
 $context['latest_news'] = $result;
 
 
-$argsSlide = $slide->getArgs($slide_per_page);
+$argsSlide = $slide->getArgs();
 $resultSlide = $slide->getSlideItem($argsSlide);
 $context['slide_item'] = $resultSlide;
 

@@ -6,7 +6,11 @@
             <div class="wrapper container">
                 <div class="headlight-slide-content">
                     <p>{{ slide.title }}</p>
-                    <a href="#" class="btn-purple">En savoir plus</a>
+                    {% if slide.video %}
+                        <a href="{{slide.link}}" class="btn-purple video-fancybox-link">En savoir plus</a>
+                    {% else %}
+                        <a href="{{slide.link}}" class="btn-purple">En savoir plus</a>
+                    {% endif %}
                 </div>                
             </div>          
         </div>
