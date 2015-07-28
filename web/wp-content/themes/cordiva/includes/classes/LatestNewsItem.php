@@ -11,12 +11,12 @@ class LatestNewsItem {
 
     }
 
-    public function getArgs($limit, $category){
+    public function getArgs($limit){
 
         $args = array(
             'post_type' => 'post',
             'post_status'=>'publish',
-            'category_name' => $category,
+            // 'category_name' => $category,
             'posts_per_page'=> $limit,
             'orderby' => 'date',
             'order'   => 'DESC',

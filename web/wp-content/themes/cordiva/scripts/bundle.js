@@ -43,16 +43,7 @@ function App() {
             $('.bloc-link-container').hide();
         }
 
-        if ($(window).width() < 769){
-            $('body').addClass('mobile');
-            $('.menu-fixed-content').hide();
-            $('.principal-menu').hide();
-            $('.bloc-link-wrapper').hide();
-            $('.meet-expert-wrapper').slick({
-                dots:true,
-                arrows:false
-            });
-        }        
+               
 
         // resize
         // -------------------------
@@ -118,8 +109,8 @@ function App() {
                     'transitionIn'  : 'none',
                     'transitionOut' : 'none',
                     'title'         : this.title,
-                    'width'         : 640,
-                    'height'        : 385,
+                    'width'         : '80%',
+                    'height'        : '80%',
                     // 'href'          : this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
                     'href'          : this.href,
                     'type'          : 'iframe'
@@ -135,8 +126,8 @@ function App() {
                     'transitionIn'  : 'none',
                     'transitionOut' : 'none',
                     'title'         : this.title,
-                    'width'         : 640,
-                    'height'        : 385,
+                    'width'         : '90%',
+                    // 'height'        : '80%',
                     'href'          : this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
                     // 'href'          : this.href,
                     'type'          : 'swf'
@@ -218,6 +209,7 @@ function App() {
             });
         }else {
             $("body").removeClass('mobile');
+            $('.bloc-link-wrapper').show();
             $('.principal-menu').show();
             $('.mobile-menu').hide();
             $('.menu-fixed-content').show();
@@ -239,6 +231,19 @@ function App() {
 // window.onload = new App();
 $(window).load(function(){
     new App();
+});
+
+$(document).ready(function(){
+    if ($(window).width() < 769){
+        $('.bloc-link-wrapper').hide();
+        $('body').addClass('mobile');
+        $('.menu-fixed-content').hide();
+        $('.principal-menu').hide();        
+        $('.meet-expert-wrapper').slick({
+            dots:true,
+            arrows:false
+        });
+    } 
 });
 },{"gsap":"/Library/WebServer/Documents/cordiva/node_modules/gsap/src/uncompressed/TweenMax.js","jquery":"/Library/WebServer/Documents/cordiva/bower_components/jquery/dist/jquery.js","waypoints":"/Library/WebServer/Documents/cordiva/bower_components/waypoints/lib/jquery.waypoints.js"}],"/Library/WebServer/Documents/cordiva/bower_components/jquery/dist/jquery.js":[function(require,module,exports){
 (function (global){

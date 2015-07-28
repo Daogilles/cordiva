@@ -25,11 +25,13 @@ footer {
 	.contact-particulier {
 		a {
 			background: url('../images/bg-contact.jpg') center center no-repeat;
+			background-size:cover;
 		}
 	}
 	.contact-pro {
 		a {
 			background: url('../images/bg-contact2.jpg') center center no-repeat;
+			background-size:cover;
 		}
 	}
 	h2 {
@@ -149,7 +151,7 @@ footer {
 				}
 			}
 			a{
-				width: calc(100% - 20px);
+				width: 100%;
 			}
 			h2 {
 				color: $purple;

@@ -52,7 +52,7 @@ body {
 @media (max-width: $screen-sm) {
     .wrapper {
         padding: 0 10px;
-        width: 320px;
+        width: 100%;
     }
 }
 
@@ -174,6 +174,7 @@ hr {
     height:500px;
     line-height:500px;
     position: relative;
+    top: 90px;
     width:100%;
     h1 {
         color: $purple;
@@ -187,5 +188,11 @@ hr {
         font-weight: $light;
         text-align: justify;
         width: 500px;
+    }
+}
+
+@media (max-width: $screen-sm) {
+    .content-headlight {
+        top: 65px;
     }
 }

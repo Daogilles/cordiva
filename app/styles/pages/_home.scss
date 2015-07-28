@@ -10,7 +10,15 @@ body {
 .home {
 	.main-content {
 		position: relative;
-		top: 0;
+		top: 90px;
 		z-index: 1;
+	}
+}
+
+@media (max-width: $screen-sm) {
+	.home {
+		.main-content {
+			top: 65px;
+		}
 	}
 }

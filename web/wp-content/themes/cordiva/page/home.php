@@ -19,8 +19,8 @@ $argsHome = $home->getArgs();
 $resultHome = $home->getHomeItem($argsHome);
 $context["home"] = $resultHome;
 
-$category = "latest_news";
-$args = $latest_news->getArgs($post_per_page, $category);
+// $category = "latest_news";
+$args = $latest_news->getArgs($post_per_page);
 $result = $latest_news->getLatestNews($args);
 $context['latest_news'] = $result;
 
