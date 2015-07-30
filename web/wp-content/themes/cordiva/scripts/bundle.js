@@ -72,7 +72,8 @@ function App() {
                     });
                     TweenMax.to($(this).find('.submenu'), 0.6, {
                         opacity: 1,
-                        visibility: 'visible'
+                        visibility: 'visible',
+                        display: "block"
                     });
                 }                
             }, function(){
@@ -85,7 +86,8 @@ function App() {
                 });
                 TweenMax.to($(this).find('.submenu'), 0.4, {
                     opacity: 0,
-                    visibility: 'hidden'
+                    visibility: 'hidden',
+                    display: "none"
                 });
             });
 
@@ -155,7 +157,7 @@ function App() {
                 $('.menu-fixed-content li').removeClass('active');
                 $(this).parent().addClass('active');
 
-                var top = $( $.attr(this, 'href') ).offset().top;
+                var top = $( $.attr(this, 'href') ).offset().top - 100;
 
                 $('html, body').animate({
                     scrollTop: top + (($(window).scrollTop() > top) ? -1 : 1)

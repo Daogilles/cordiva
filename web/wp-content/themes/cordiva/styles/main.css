@@ -486,7 +486,7 @@ body {
 
 .page-content {
   background-color: #FFF;
-  padding: 100px 0; }
+  padding: 200px 0; }
 
 a {
   text-decoration: none;
@@ -3460,6 +3460,7 @@ ul.submenu {
   margin: 0;
   opacity: 0;
   visibility: hidden;
+  display: none;
   position: absolute;
   left: 50%;
   margin-left: -640px;
@@ -3902,7 +3903,9 @@ body.mobile header {
   .news-item:nth-child(4) {
     border-left: none; }
   .news-item:nth-child(n+4) {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .page-id-19 .news-item:nth-child(n+4) {
+    margin-bottom: 60px; } }
 
 .btn-purple {
   color: #FFF;

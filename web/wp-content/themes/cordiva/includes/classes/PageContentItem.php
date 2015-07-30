@@ -65,6 +65,8 @@ class PageContentItem {
                     $tab_result['actu'] = true;
                 }else if ($query->post->ID == 140) {
                     $tab_result['lexique'] = do_shortcode('[namedirectory dir="3"]');
+                }else if ($query->post->ID == 300) {
+                    $tab_result['jobs'] = get_the_content();
                 }
                 
             }

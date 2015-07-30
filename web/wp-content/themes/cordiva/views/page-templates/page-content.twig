@@ -26,6 +26,8 @@
 					{% include 'partials/latest-presse.twig' %}
 				{% elseif page.lexique is not empty %}
 					{{page.lexique}}
+				{% elseif page.jobs is not empty %}
+					{{page.jobs}}
 				{% else %}
 					{% include 'partials/bloc-page-content.twig' %}		
 				{% endif %}

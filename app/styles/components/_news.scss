@@ -87,4 +87,11 @@
             margin-bottom: 0;
         }
     }
+    .page-id-19 {
+        .news-item {
+            &:nth-child(n+4){
+                margin-bottom: 60px;
+            }
+        }
+    }
 }
