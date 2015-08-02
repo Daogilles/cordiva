@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font-family: $font-heading;
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: $font-size-base;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -84,6 +84,7 @@ body {
             color: $gray;
             font-size: 14px;
             font-weight: $normal;
+            font-family: 'HelveticaNeueLTStd-Md';
             text-align:justify;
         }
     }
@@ -180,12 +181,14 @@ hr {
         color: $purple;
         font-size: 40px;
         font-weight: $light;
+        font-family: 'HelveticaNeueLTStd-Lt';
         width: 500px;
     }
     p {
         color: $gray;
         font-size: 18px;
         font-weight: $light;
+        font-family: 'HelveticaNeueLTStd-Lt';
         text-align: justify;
         width: 500px;
     }

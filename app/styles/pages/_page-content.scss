@@ -10,6 +10,7 @@
 		color: $gray;
 		font-size: 28px;
 		font-weight: $light;
+		font-family: 'HelveticaNeueLTStd-Lt';
 		margin-bottom: 40px;
 		margin-top: 40px;
 	}
@@ -93,6 +94,7 @@
 			height: 100%;
 			font-size: 13px;
 			font-weight: $normal;
+			font-family: 'HelveticaNeueLTStd-Md';
 			padding:7px;
 			width: 100%;
 		}
@@ -136,10 +138,12 @@
 			width:100%;
 			h1 {
 				font-size: 28px;
+				font-family: 'HelveticaNeueLTStd-Md';
 				width: 100%;
 			}
 			p {
 				font-size: 16px;
+				font-family: 'HelveticaNeueLTStd-Md';
 				width: 100%;
 			}
 		}

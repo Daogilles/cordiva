@@ -101,10 +101,12 @@ form {
             p {
                 color: $gray;
                 font-size: 18px;
-                font-weight: $normal;    
+                font-weight: $normal;
+                font-family: 'HelveticaNeueLTStd-Md';  
             }
             span {
                 font-weight: $extra-bold;
+                font-family: 'HelveticaNeueLTStd-Md';
             }
         }
 
@@ -118,6 +120,7 @@ form {
                 height: 30px;
                 font-size: 28px;
                 font-weight: $light;
+                font-family: 'HelveticaNeueLTStd-Lt';
                 width: auto;
             }
             .icon-infos {
@@ -196,6 +199,7 @@ form {
         color: $gray;
         font-size: 18px;
         font-weight: $normal;
+        font-family: 'HelveticaNeueLTStd-Md';
         width: 100%;
 
         &.input-icn {
@@ -230,6 +234,7 @@ form {
             
             font-size: 28px;
             font-weight: $normal;
+            font-family: 'HelveticaNeueLTStd-Md';
         }
     }
 
@@ -284,7 +289,8 @@ form {
         p {
             color: $gray;
             font-size: 18px;
-            font-weight: $normal;    
+            font-weight: $normal; 
+            font-family: 'HelveticaNeueLTStd-Md';   
         }
         span {
             font-weight: $extra-bold;
@@ -316,6 +322,7 @@ input[type='submit'].wpcf7-submit {
     background:url('../images/arrow-submit.png') 90% center no-repeat;
     font-size: 18px;
     font-weight: $normal;
+    font-family: 'HelveticaNeueLTStd-Md';
     background-color:$purple;
     border-radius: 10px;
     height: 50px;

@@ -26,6 +26,7 @@
             color: $gray-dark;
             font-size: 16px;
             font-weight: $normal;
+            font-family: 'HelveticaNeueLTStd-Md';
             line-height: 120%;
             margin-bottom: 15px;
         }
@@ -33,6 +34,7 @@
             color: $purple;
             font-size: 12px;
             font-weight: $normal;
+            font-family: 'HelveticaNeueLTStd-Md';
         }
     }
 }
@@ -40,6 +42,7 @@
 .see-news {
     color: $purple;
     font-size: 16px;
+    font-family: 'HelveticaNeueLTStd-Md';
     margin-top: 50px;
     &:hover {
         text-decoration: underline;

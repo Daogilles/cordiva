@@ -20,7 +20,7 @@ h1, h2, h3, h4, p, a {
 // -------------------------
 
 p {
-    font-family: $font-sans-serif;
+    font-family: 'HelveticaNeueLTStd-Md';
     line-height: 1.6;
     font-size: $font-size-base;
     
@@ -45,14 +45,14 @@ p {
 // -------------------------
 
 h1, .h1 {
-    font-family: $font-heading;
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: $font-size-h1;
     line-height: 1.2;
     font-weight: $extra-bold;    
 }
 
 h2, .h2 {
-    font-family: $font-sans-serif;
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: $font-size-h2;
     line-height: 1.2;
     font-weight: $bold;
@@ -60,14 +60,14 @@ h2, .h2 {
 
 
 h3, .h3 {
-    font-family: $font-sans-serif;
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: $font-size-h3;
     line-height: 1.2;
     font-weight: $bold;
 }
 
 h4, .h4 {
-    font-family: $font-sans-serif;
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: $font-size-h4;
     color: $black;
     line-height: 1.2;
@@ -75,7 +75,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-    font-family: $font-sans-serif;
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: $font-size-h5;
     color: $black;
     line-height: 1.2;
@@ -83,7 +83,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    font-family: $font-sans-serif;
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: $font-size-h6;
     color: $black;
     line-height: 1.2;
@@ -165,6 +165,7 @@ h1.home-title {
     color: $purple;
     font-size: 40px;
     font-weight: $light;
+    font-family: 'HelveticaNeueLTStd-Lt';
     margin: 30px 0;
     text-align: center;
 }

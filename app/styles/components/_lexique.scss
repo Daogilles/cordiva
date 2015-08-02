@@ -6,6 +6,7 @@
     .name_directory_startswith {
         color: $gray;
         font-size: 20px;
+        font-family: 'HelveticaNeueLTStd-Md';
         padding: 0 5px;
         &.inactive {
             color: $gray-light;
@@ -27,6 +28,7 @@
     strong {
         color: $purple;
         font-size: 13px;
+        font-family: 'HelveticaNeueLTStd-Blk';
         text-transform: uppercase;
     }
 }
