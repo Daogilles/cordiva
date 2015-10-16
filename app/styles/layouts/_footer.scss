@@ -24,13 +24,13 @@ footer {
 	
 	.contact-particulier {
 		a {
-			background: url('../images/bg-contact.jpg') center center no-repeat;
+			background: url('../images/bg-contact2.jpg') center center no-repeat;
 			background-size:cover;
 		}
 	}
 	.contact-pro {
 		a {
-			background: url('../images/bg-contact2.jpg') center center no-repeat;
+			background: url('../images/bg-contact.jpg') center center no-repeat;
 			background-size:cover;
 		}
 	}
@@ -114,7 +114,7 @@ footer {
 			}
 		}
 		&:last-child {
-			margin-top: 40px;
+			margin-top: 20px;
 			position: relative;
 			a {
 				background: url('../images/powered.png') center center no-repeat;
@@ -131,6 +131,9 @@ footer {
 				position: absolute;
 			}
 		}
+	}
+	.footer-mentions {
+		margin-top: 20px;
 	}
 }
 

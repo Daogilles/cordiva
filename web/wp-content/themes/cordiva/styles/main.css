@@ -546,7 +546,7 @@ body {
 
 .page-content {
   background-color: #FFF;
-  padding: 200px 0; }
+  padding: 100px 0; }
 
 a {
   text-decoration: none;
@@ -3045,10 +3045,10 @@ footer {
       height: 245px;
       position: relative; }
   #footer-top .contact-particulier a {
-    background: url("../images/bg-contact.jpg") center center no-repeat;
+    background: url("../images/bg-contact2.jpg") center center no-repeat;
     background-size: cover; }
   #footer-top .contact-pro a {
-    background: url("../images/bg-contact2.jpg") center center no-repeat;
+    background: url("../images/bg-contact.jpg") center center no-repeat;
     background-size: cover; }
   #footer-top h2 {
     color: #FFF;
@@ -3111,7 +3111,7 @@ footer {
   #footer-bottom .row .col-6:first-child span {
     color: #5c696f; }
   #footer-bottom .row:last-child {
-    margin-top: 40px;
+    margin-top: 20px;
     position: relative; }
     #footer-bottom .row:last-child a {
       background: url("../images/powered.png") center center no-repeat;
@@ -3125,6 +3125,8 @@ footer {
       font-family: 'HelveticaNeueLTStd-Md';
       margin-left: 10px;
       position: absolute; }
+  #footer-bottom .footer-mentions {
+    margin-top: 20px; }
 
 @media (max-width: 768px) {
   footer {
@@ -3505,10 +3507,11 @@ table {
     height: 100%;
     padding: 0;
     overflow: hidden;
-    margin: 0; }
+    margin: 0;
+    float: right; }
   .main-menu li.first-menu-li {
     border-left: 1px solid #dedede;
-    display: inline-block;
+    float: left;
     height: 100%;
     line-height: 90px;
     list-style: none;
@@ -3540,9 +3543,9 @@ ul.submenu {
   visibility: hidden;
   display: none;
   position: absolute;
-  left: 50%;
-  margin-left: -640px;
-  top: 90px; }
+  margin-left: -250px;
+  top: 90px;
+  width: auto; }
   ul.submenu li.submenu-li {
     list-style: none;
     display: inline-block;
@@ -3692,7 +3695,9 @@ body.mobile header {
     .main-menu li.first-menu-li a.first-menu-link {
       color: #5c696f;
       font-size: 13px;
-      font-family: 'HelveticaNeueLTStd-Md'; } }
+      font-family: 'HelveticaNeueLTStd-Md'; }
+  ul.submenu li.submenu-li a.submenu-link {
+    font-size: 13px; } }
 
 .name_directory_index .name_directory_startswith {
   color: #5c696f;
@@ -4343,6 +4348,7 @@ span.icon {
   width: 100%; }
   .headlight .headlight-slider {
     height: 100%;
+    overflow: hidden;
     width: 100; }
     .headlight .headlight-slider button {
       background-color: transparent;
@@ -4959,6 +4965,10 @@ body {
 
 .bg-img-mobile {
   display: none; }
+
+.anchor {
+  padding-top: 100px !important;
+  margin-top: 0 !important; }
 
 .article-content h3 {
   color: #5c696f;

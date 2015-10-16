@@ -15,10 +15,10 @@
                     <a href="{{item.link}}" class="inner first-menu-link" title="{{item.title}}" id="{{ item.id }}">
                         <span class="first-menu-item">{{item.title}}</span>                    
                     </a>
-                    <ul class="submenu submenu-{{item.id}} wrapper"> 
+                    <ul class="submenu submenu-{{item.id}}"> 
                         {% for child in item.children %}  
-                        <li class="submenu-li">
-                            <a href="{{item.link}}" title="{{child.title}}" class="submenu-link" id="{{child.id}}">
+                        <li class="submenu-li">                        
+                            <a href="{{item.link}}" title="{{child.title}}" class="submenu-link abababa" id="{{child.id}}">
                                 <span>{{child.title}}</span>
                             </a>
                         </li>

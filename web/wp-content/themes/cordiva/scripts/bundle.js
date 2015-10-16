@@ -33,9 +33,9 @@ function App() {
         var menuContentFixedHeight = $('.menu-fixed-content').height();
         $('.menu-fixed-content').css({'margin-top': -(menuContentFixedHeight/2)+'px'});
 
-        $('.submenu').css({
-            'margin-left': -($('.wrapper').width()/2)+'px'
-        });
+        // $('.submenu').css({
+        //     'margin-left': -($('.wrapper').width()/2)+'px'
+        // });
 
         if ( $('body').hasClass('home') ){
             $('.bloc-link-container').show();
@@ -43,7 +43,22 @@ function App() {
             $('.bloc-link-container').hide();
         }
 
-               
+        $('.submenu-link').each(function(){
+            var title = $(this).attr('title');
+            var href = $(this).attr('href');
+            if (title == "Qu’est-ce-qu’une insuffisance cardiaque ?") {
+                title = "quest-ce-quune-insuffisance-cardiaque";
+            }else if(title == "À quoi l’insuffisance cardiaque est-elle due ?"){
+                title = "a-quoi-linsuffisance-cardiaque-est-elle-due";
+            }else if(title == "Pïmp's"){
+                title = "etude-clinique-pimps";
+            }
+
+            var goodTitle = title.toLowerCase().replace(/ |\'+/g, '-').replace(/é|è+/g, 'e').replace(/à+/g, 'a').replace(/[^\w-]/g, '');
+
+            $(this).attr('href', href + '#' + goodTitle);
+            
+        });
 
         // resize
         // -------------------------
@@ -157,7 +172,7 @@ function App() {
                 $('.menu-fixed-content li').removeClass('active');
                 $(this).parent().addClass('active');
 
-                var top = $( $.attr(this, 'href') ).offset().top - 100;
+                var top = $( $.attr(this, 'href') ).offset().top - 200;
 
                 $('html, body').animate({
                     scrollTop: top + (($(window).scrollTop() > top) ? -1 : 1)
@@ -165,7 +180,7 @@ function App() {
                 
             });
 
-            var offsetSection = '0';
+            var offsetSection = '200px';
             $('.subpage-content').waypoint(function(direction) {
                 var element = $(this.element);
                 var prev = $(this.element.previousElementSibling);

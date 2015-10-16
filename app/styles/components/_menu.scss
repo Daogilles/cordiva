@@ -18,10 +18,11 @@
         padding:0;
         overflow: hidden;
         margin: 0;
+        float:right;
     }
     li.first-menu-li {
         border-left: 1px solid $gray-light;
-        display: inline-block;
+        float: left;
         height: 100%;
         line-height: 90px;
         list-style: none;
@@ -55,9 +56,10 @@ ul.submenu {
     visibility: hidden;
     display: none;
     position: absolute;
-    left: 50%;
-    margin-left: -640px;
-    top: 90px;    
+    // left: 50%;
+    margin-left: -250px;
+    top: 90px;
+    width: auto;
     li.submenu-li {
         list-style: none;
         display: inline-block;
@@ -213,6 +215,13 @@ body {
                 font-size: 13px;
                 font-family: 'HelveticaNeueLTStd-Md';
             }
-        }   
+        }        
+    }
+    ul.submenu {            
+        li.submenu-li {                
+            a.submenu-link {
+                font-size: 13px;
+            }
+        }
     }
 }
