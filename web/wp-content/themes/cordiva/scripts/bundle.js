@@ -159,7 +159,7 @@ function App() {
                 arrows:true
             });
 
-            $('.mobile-menu-open').on('click', function(e){
+            $('.mobile-menu-open').on('click, touchstart', function(e){
                 $('.header').toggleClass('open-mobile');
                 $('.nav-mobile').toggleClass('open-mobile');
                 $('.main-content').toggleClass('open-mobile');                

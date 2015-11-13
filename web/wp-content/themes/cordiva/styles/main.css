@@ -3543,9 +3543,11 @@ ul.submenu {
   visibility: hidden;
   display: none;
   position: absolute;
-  margin-left: -250px;
+  margin-left: -100px;
   top: 90px;
   width: auto; }
+  ul.submenu.submenu-23 {
+    margin-left: -250px; }
   ul.submenu li.submenu-li {
     list-style: none;
     display: inline-block;
@@ -3629,6 +3631,10 @@ body.mobile header {
   transition: all 400ms ease;
   display: none; }
   .nav-mobile.open-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
     opacity: 1;
     visibility: visible;
     -webkit-transform: translateY(0);
@@ -4969,6 +4975,9 @@ body {
 .anchor {
   padding-top: 100px !important;
   margin-top: 0 !important; }
+
+.post-type-page {
+  margin: 150px 0 100px; }
 
 .article-content h3 {
   color: #5c696f;

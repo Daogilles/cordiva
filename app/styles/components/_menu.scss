@@ -57,9 +57,12 @@ ul.submenu {
     display: none;
     position: absolute;
     // left: 50%;
-    margin-left: -250px;
+    margin-left: -100px;
     top: 90px;
     width: auto;
+    &.submenu-23 {
+        margin-left: -250px;    
+    }
     li.submenu-li {
         list-style: none;
         display: inline-block;
@@ -147,6 +150,10 @@ body {
     @include transition(all 400ms ease);
     display: none;
     &.open-mobile {
+        position: fixed;
+        top:0;
+        width: 100%;
+        z-index: 9999;
         opacity: 1;
         visibility: visible;
         @include transform(translateY(0));
